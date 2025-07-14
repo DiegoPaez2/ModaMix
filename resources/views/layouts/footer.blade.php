@@ -8,35 +8,35 @@
                         <div class="logo logo-width-1 wow fadeIn animated">
                             <a href="index.html"><img src="{{ asset('assets/imgs/logo/logo.png')}}" alt="logo"></a>
                         </div>
-                        <h5 class="mt-20 mb-10 fw-600 text-grey-4 wow fadeIn animated">Contacto</h5>
+                        <h5 class="mt-20 mb-10 fw-600 text-grey-4 wow fadeIn animated">Contact</h5>
                         <p class="wow fadeIn animated">
-                            <strong>Dirección: </strong>Quito
+                            <strong>Address: </strong>Tetouan Shore
                         </p>
                         <p class="wow fadeIn animated">
-                            <strong>Teléfono: </strong>+593 300818
+                            <strong>Phone: </strong>+212 682860421
                         </p>
                         <p class="wow fadeIn animated">
-                            <strong>Email: </strong>ModaMix@gmail.com
+                            <strong>Email: </strong>yusufisawi@gmail.com
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3">
-                    <h5 class="widget-title wow fadeIn animated">Acerca de</h5>
+                    <h5 class="widget-title wow fadeIn animated">About</h5>
                     <ul class="footer-list wow fadeIn animated mb-sm-5 mb-md-0">
-                        <li><a href="#">Sobre Nosotros</a></li>
-                        <li><a href="#">Información de Entrega</a></li>
-                        <li><a href="#">Política de Privacidad</a></li>
-                        <li><a href="#">Términos y Condiciones</a></li>
-                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2  col-md-3">
-                    <h5 class="widget-title wow fadeIn animated">Mi Cuenta</h5>
+                    <h5 class="widget-title wow fadeIn animated">My Account</h5>
                     <ul class="footer-list wow fadeIn animated">
-                        <li><a href="my-account.html">Mi Cuenta</a></li>
-                        <li><a href="#">Ver Carrito</a></li>
-                        <li><a href="#">Rastrear Pedido</a></li>
-                        <li><a href="#">Pedido</a></li>
+                        <li><a href="my-account.html">My Account</a></li>
+                        <li><a href="#">View Cart</a></li>
+                        <li><a href="#">Track My Order</a></li>
+                        <li><a href="#">Order</a></li>
                     </ul>
                 </div>
 

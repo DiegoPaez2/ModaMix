@@ -2,13 +2,13 @@
     <div class="container mx-auto px-4 py-8">
         <div class="flex justify-end mb-4">
             <a href="{{ route('invoice.pdf', $order) }}" target="__blank" class="btn">
-                Descargar Factura</a>
+                Download Invoice</a>
         </div>
         <div class="bg-orange-100/40 p-8 rounded-3xl">
             <header class="flex justify-between items-center mb-8">
                 <div>
-                    <h1 class="text-5xl font-bold text-orange-600">Factura</h1>
-                    <p class="text-md">Factura #{{ $order->id }}</p>
+                    <h1 class="text-5xl font-bold text-orange-600">Invoice</h1>
+                    <p class="text-md">Invoice #{{ $order->id }}</p>
                 </div>
                 <div>
                     <p class="text-orange-600 font-semibold">SHOPI</p>
@@ -18,21 +18,21 @@
                 </div>
             </header>
             <div class="mb-8 text-lg">
-                <p class="text-orange-600 font-semibold mb-2 text-xl">Facturar a:</p>
-                <p><strong>Nombre</strong> : {{ ucfirst($order->user->name) }}</p>
-                <p><strong>Teléfono</strong> : {{ ucfirst($order->user->billingDetails->phone) }}</p>
-                <p><strong>Dirección</strong> : {{ ucfirst($order->user->billingDetails->billing_address) }}</p>
-                <p><strong>Ciudad</strong> : {{ ucfirst($order->user->billingDetails->city) }}, <strong>Estado</strong> :
+                <p class="text-orange-600 font-semibold mb-2 text-xl">Bill To:</p>
+                <p><strong>Name</strong> : {{ ucfirst($order->user->name) }}</p>
+                <p><strong>Phone</strong> : {{ ucfirst($order->user->billingDetails->phone) }}</p>
+                <p><strong>Address</strong> : {{ ucfirst($order->user->billingDetails->billing_address) }}</p>
+                <p><strong>City</strong> : {{ ucfirst($order->user->billingDetails->city) }}, <strong>State</strong> :
                     {{ ucfirst($order->user->billingDetails->state) }}
                 </p>
             </div>
             <table class="w-full text-left table-auto bg-white/60">
                 <thead>
                     <tr>
-                        <th class="px-4 py-2 text-orange-600">Imagen del producto</th>
-                        <th class="px-4 py-2 text-orange-600">Nombre del producto</th>
-                        <th class="px-4 py-2 text-orange-600">Cantidad</th>
-                        <th class="px-4 py-2 text-orange-600">Precio</th>
+                        <th class="px-4 py-2 text-orange-600">Product image</th>
+                        <th class="px-4 py-2 text-orange-600">Product name</th>
+                        <th class="px-4 py-2 text-orange-600">Quantity</th>
+                        <th class="px-4 py-2 text-orange-600">Price</th>
                         <th class="px-4 py-2 text-orange-600">Total</th>
                     </tr>
                 </thead>
