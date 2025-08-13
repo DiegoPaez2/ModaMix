@@ -13,7 +13,7 @@ class Order extends Model
 
     protected $fillable = [
         'user_id', 'status', 'total', 'country',
-        'session_id',
+        'session_id', 'shipping_status', 'tracking_number', 'estimated_delivery',
     ];
 
     protected static function boot()
@@ -39,5 +39,17 @@ class Order extends Model
     public function orderItems()
     {
         return $this->hasMany(OrderItem::class);
+    }
+
+    public function billingDetail()
+    {
+        return $this->hasOne(BillingDetail::class, 'user_id', 'user_id');
+    }
+
+    public function getSubtotalAttribute()
+    {
+        return $this->orderItems->sum(function($item) {
+            return $item->price * $item->quantity;
+        });
     }
 }

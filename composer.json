@@ -10,7 +10,7 @@
         "awcodes/overlook": "^1.0",
         "filament/filament": "^2.0",
         "guzzlehttp/guzzle": "^7.2",
-        "hardevine/shoppingcart": "^3.2",
+        "hardevine/shoppingcart": "^3.4",
         "laravel/cashier": "^14.12",
         "laravel/framework": "^10.8",
         "laravel/sanctum": "^3.2",

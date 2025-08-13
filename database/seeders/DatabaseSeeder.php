@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        // Crear categorías y productos
         Category::factory(6)->create();
         $categories = Category::all();
         Product::factory(30)->create()->each(function ($product) use ($categories) {
@@ -24,11 +24,28 @@ class DatabaseSeeder extends Seeder
                 $categories->random(rand(1, 3))->pluck('id')->toArray()
             );
         });
+
+        // Usuarios administradores
+        User::factory()->create([
+            'name' => 'Admin Principal',
+            'email' => 'admin@modamix.com',
+            'password' => bcrypt('admin123'),
+            'is_admin' => true
+        ]);
         User::factory()->create([
             'name' => 'yusuf',
             'email' => 'yusuf@isawi.com',
-            'password' => 'password',
+            'password' => bcrypt('password'),
             'is_admin' => true
         ]);
+
+        // Usuarios clientes
+        User::factory()->create([
+            'name' => 'Cliente Demo',
+            'email' => 'cliente@modamix.com',
+            'password' => bcrypt('cliente123'),
+            'is_admin' => false
+        ]);
+        User::factory(5)->create();
     }
 }

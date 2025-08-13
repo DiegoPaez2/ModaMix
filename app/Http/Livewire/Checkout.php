@@ -7,20 +7,27 @@ use App\Models\Order;
 use App\Models\OrderItem;
 use App\Services\InvoiceService;
 use Livewire\Component;
-use Cart;
+use Gloudemans\Shoppingcart\Facades\Cart as CartFacade;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
+// ...existing code...
 class Checkout extends Component
 {
+    public function confirmation()
+    {
+        $trackingNumber = session('tracking_number') ?? session('tracking_number', request()->session()->get('tracking_number'));
+        $success = session('success');
+        return view('livewire.confirmation', compact('trackingNumber', 'success'));
+    }
 
     public function stripeCheckout()
     {
         \Stripe\Stripe::setApiKey(config('services.stripe.secret'));
         $lineItems = [];
-        foreach (Cart::content() as $item) {
+    foreach (CartFacade::content() as $item) {
             $lineItems[] = [
                 'price_data' => [
                     'currency' => 'usd',
@@ -40,7 +47,7 @@ class Checkout extends Component
             'cancel_url' => route('checkout.cancel'),
         ]);
 
-        $total = str_replace(',', '', Cart::total());
+    $total = str_replace(',', '', CartFacade::total());
         $order = new Order([
             'user_id' => Auth::user()->id,
             'status' => 'pending',
@@ -49,7 +56,7 @@ class Checkout extends Component
         ]);
         $order->save();
 
-        foreach (Cart::content() as $item) {
+    foreach (CartFacade::content() as $item) {
             $price = str_replace(',', '', $item->price);
             $orderItem = new OrderItem([
                 'order_id' => $order->id,
@@ -80,7 +87,7 @@ class Checkout extends Component
                 $order->save();
             }
             Mail::to($order->user->email)->send(new OrderReceived($order, $invoiceService->createInvoice($order)));
-            Cart::destroy();
+            CartFacade::destroy();
             return view('livewire.success', compact('customer'));
         } catch (\Exception $e) {
             dd($e->getMessage());
@@ -97,36 +104,97 @@ class Checkout extends Component
     public function makeOrder(Request $request)
     {
         $validatedRequest = $request->validate([
-            'country' => 'required',
-            'billing_address' => 'required',
-            'city' => 'required',
-            'state' => 'required',
-            'phone' => 'required',
-            'zipcode' => 'required|numeric',
-            'order_notes' => '',
+            'country' => ['string'],
+            'city' => ['string'],
+            'state' => ['string'],
+            'zipcode' => ['string'],
+            'phone' => ['required', 'string'],
+            'billing_address' => ['required'],
+            'payment_method' => ['required', 'string', 'in:tarjeta,transferencia,efectivo'],
         ]);
-
-        $user = Auth::user();
-        if ($user->billingDetails === null) {
-            $user->billingDetails()->create($validatedRequest);
-        } else {
-            $user->billingDetails()->update($validatedRequest);
+        if (!isset($data['state'])) {
+            $data['state'] = $request->input('state', '');
+        }
+        if (!isset($data['zipcode'])) {
+            $data['zipcode'] = $request->input('zipcode', '');
+        }
+        if (!isset($data['phone'])) {
+            $data['phone'] = $request->input('phone', '');
         }
 
-        $sessionUrl = $this->stripeCheckout();
+        $user = Auth::user();
+        // Aseguramos que parroquia_barrio esté presente
+        $data = $validatedRequest;
+        if (!isset($data['parroquia_barrio'])) {
+            $data['parroquia_barrio'] = $request->input('parroquia_barrio', '');
+        }
+        if (!isset($data['country'])) {
+            $data['country'] = $request->input('country', 'Ecuador');
+        }
+        if (!isset($data['city'])) {
+            $data['city'] = $request->input('city', '');
+        }
+        if ($user->billingDetails === null) {
+            $user->billingDetails()->create($data);
+        } else {
+            $user->billingDetails()->update($data);
+        }
 
+        // Generar número de seguimiento aleatorio
+        $tracking_number = 'EC-' . rand(100000, 999999);
 
-        return redirect($sessionUrl);
+        // Crear la orden y guardar el tracking_number
+        $total = str_replace(',', '', CartFacade::total());
+        $order = $user->orders()->create([
+            'tracking_number' => $tracking_number,
+            'status' => 'pending',
+            'total' => $total,
+        ]);
+            $data = $validatedRequest;
+            if (!isset($data['parroquia_barrio'])) {
+                $data['parroquia_barrio'] = $request->input('parroquia_barrio', '');
+            }
+            if ($user->billingDetails === null) {
+                $user->billingDetails()->create($data);
+            } else {
+                $user->billingDetails()->update($data);
+            }
+
+            // Generar número de seguimiento aleatorio
+            $tracking_number = 'EC-' . rand(100000, 999999);
+
+            // Crear la orden y guardar el tracking_number
+            $order = $user->orders()->create([
+                'tracking_number' => $tracking_number,
+                'status' => 'pending',
+                'total' => CartFacade::total(),
+            ]);
+            foreach (Cart::content() as $item) {
+                $order->orderItems()->create([
+                    'product_id' => $item->id,
+                    'price' => $item->price,
+                    'quantity' => $item->qty,
+                ]);
+            }
+            Cart::destroy();
+
+            // Mensaje de éxito y datos para la vista de confirmación
+            return redirect()->route('checkout.confirmation')->with([
+                'tracking_number' => $tracking_number,
+                'success' => 'Pago realizado correctamente. Tu número de seguimiento es ' . $tracking_number . '. Puedes ver y descargar tu factura en el dashboard.' ,
+                'order_id' => $order->id
+            ]);
     }
 
     public function render()
     {
-        if (Cart::count() <= 0) {
+        if (CartFacade::count() <= 0) {
             session()->flash('error', 'Your cart is empty.');
             return redirect()->route('home');
         }
         $user = Auth::user();
         $billingDetails = $user->billingDetails;
-        return view('livewire.checkout', compact('billingDetails'));
+        $trackingNumber = session('tracking_number');
+        return view('livewire.checkout', compact('billingDetails', 'trackingNumber'));
     }
 }

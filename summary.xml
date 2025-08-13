@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metrics generated="2025-07-21T06:18:28" pdepend="@package_version@" ahh="1.7352941176471" andc="0.10185185185185" calls="605" ccn="179" ccn2="183" cloc="331" clsa="0" clsc="79" eloc="2257" fanout="250" leafs="49" lloc="982" loc="3118" maxDIT="3" ncloc="2787" noc="79" nof="0" noi="0" nom="140" nop="27" roots="29">
+  <files>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Console\Kernel.php" loc="28" cloc="7" eloc="15" lloc="7" ncloc="21"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Events\OrderStatusChanged.php" loc="39" cloc="8" eloc="25" lloc="15" ncloc="31"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Exceptions\Handler.php" loc="31" cloc="9" eloc="17" lloc="7" ncloc="22"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\BillingDetailResource.php" loc="77" cloc="3" eloc="64" lloc="24" ncloc="74"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\CategoryResource.php" loc="81" cloc="2" eloc="69" lloc="25" ncloc="79"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderForm.php" loc="41" cloc="1" eloc="32" lloc="17" ncloc="40"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderItemResource.php" loc="111" cloc="2" eloc="99" lloc="24" ncloc="109"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderResource.php" loc="107" cloc="2" eloc="95" lloc="26" ncloc="105"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\ProductResource.php" loc="167" cloc="1" eloc="155" lloc="47" ncloc="166"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\UserResource.php" loc="74" cloc="2" eloc="62" lloc="22" ncloc="72"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\BillingDetailResource\Pages\CreateBillingDetail.php" loc="13" cloc="0" eloc="9" lloc="5" ncloc="13"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\BillingDetailResource\Pages\EditBillingDetail.php" loc="20" cloc="0" eloc="15" lloc="7" ncloc="20"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\BillingDetailResource\Pages\ListBillingDetails.php" loc="20" cloc="0" eloc="15" lloc="7" ncloc="20"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\CategoryResource\Pages\CreateCategory.php" loc="18" cloc="0" eloc="13" lloc="7" ncloc="18"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\CategoryResource\Pages\EditCategory.php" loc="25" cloc="0" eloc="19" lloc="9" ncloc="25"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\CategoryResource\Pages\ListCategories.php" loc="20" cloc="0" eloc="15" lloc="7" ncloc="20"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\CategoryResource\RelationManagers\CategoriesRelationManager.php" loc="62" cloc="1" eloc="54" lloc="17" ncloc="61"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderItemResource\Pages\CreateOrderItem.php" loc="13" cloc="0" eloc="9" lloc="5" ncloc="13"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderItemResource\Pages\EditOrderItem.php" loc="20" cloc="0" eloc="15" lloc="7" ncloc="20"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderItemResource\Pages\ListOrderItems.php" loc="20" cloc="0" eloc="15" lloc="7" ncloc="20"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderItemResource\RelationManagers\OrdersRelationManager.php" loc="50" cloc="1" eloc="42" lloc="14" ncloc="49"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderResource\Pages\CreateOrder.php" loc="18" cloc="0" eloc="13" lloc="7" ncloc="18"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderResource\Pages\EditOrder.php" loc="25" cloc="0" eloc="19" lloc="9" ncloc="25"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderResource\Pages\ListOrders.php" loc="33" cloc="0" eloc="26" lloc="12" ncloc="33"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderResource\Widgets\statsOverview.php" loc="26" cloc="1" eloc="20" lloc="9" ncloc="25"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\ProductResource\Pages\CreateProduct.php" loc="18" cloc="0" eloc="13" lloc="7" ncloc="18"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\ProductResource\Pages\EditProduct.php" loc="25" cloc="0" eloc="19" lloc="9" ncloc="25"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\ProductResource\Pages\ListProducts.php" loc="25" cloc="0" eloc="19" lloc="9" ncloc="25"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\UserResource\Pages\CreateUser.php" loc="13" cloc="0" eloc="9" lloc="5" ncloc="13"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\UserResource\Pages\EditUser.php" loc="20" cloc="0" eloc="15" lloc="7" ncloc="20"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\UserResource\Pages\ListUsers.php" loc="20" cloc="0" eloc="15" lloc="7" ncloc="20"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Widgets\statsOverview.php" loc="32" cloc="0" eloc="28" lloc="9" ncloc="32"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\AuthenticatedSessionController.php" loc="49" cloc="9" eloc="29" lloc="19" ncloc="40"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\ConfirmablePasswordController.php" loc="42" cloc="6" eloc="29" lloc="15" ncloc="36"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\EmailVerificationNotificationController.php" loc="26" cloc="3" eloc="17" lloc="10" ncloc="23"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\EmailVerificationPromptController.php" loc="23" cloc="3" eloc="16" lloc="8" ncloc="20"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\NewPasswordController.php" loc="62" cloc="14" eloc="40" lloc="19" ncloc="48"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\PasswordController.php" loc="30" cloc="3" eloc="21" lloc="10" ncloc="27"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\PasswordResetLinkController.php" loc="45" cloc="11" eloc="27" lloc="12" ncloc="34"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\RegisteredUserController.php" loc="52" cloc="8" eloc="35" lloc="19" ncloc="44"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\VerifyEmailController.php" loc="29" cloc="3" eloc="20" lloc="12" ncloc="26"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Controller.php" loc="13" cloc="0" eloc="9" lloc="5" ncloc="13"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\InvoiceController.php" loc="68" cloc="27" eloc="30" lloc="12" ncloc="41"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\ProfileController.php" loc="61" cloc="9" eloc="38" lloc="23" ncloc="52"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Kernel.php" loc="70" cloc="21" eloc="41" lloc="5" ncloc="49"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Livewire\Cart.php" loc="53" cloc="0" eloc="49" lloc="33" ncloc="53"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Livewire\Checkout.php" loc="133" cloc="0" eloc="115" lloc="61" ncloc="133"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Livewire\Dashboard.php" loc="35" cloc="0" eloc="26" lloc="13" ncloc="35"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Livewire\Home.php" loc="77" cloc="1" eloc="62" lloc="41" ncloc="76"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Livewire\ProductDetails.php" loc="22" cloc="0" eloc="18" lloc="9" ncloc="22"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\AuthAdmin.php" loc="27" cloc="5" eloc="18" lloc="10" ncloc="22"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\Authenticate.php" loc="18" cloc="3" eloc="11" lloc="5" ncloc="15"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\EncryptCookies.php" loc="18" cloc="6" eloc="8" lloc="3" ncloc="12"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\PreventRequestsDuringMaintenance.php" loc="18" cloc="6" eloc="8" lloc="3" ncloc="12"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\RedirectIfAuthenticated.php" loc="31" cloc="5" eloc="20" lloc="12" ncloc="26"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\TrimStrings.php" loc="20" cloc="5" eloc="11" lloc="3" ncloc="15"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\TrustHosts.php" loc="21" cloc="5" eloc="12" lloc="4" ncloc="16"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\TrustProxies.php" loc="29" cloc="10" eloc="14" lloc="5" ncloc="19"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\ValidateSignature.php" loc="23" cloc="11" eloc="8" lloc="3" ncloc="12"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\VerifyCsrfToken.php" loc="18" cloc="6" eloc="8" lloc="3" ncloc="12"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Requests\Auth\LoginRequest.php" loc="86" cloc="21" eloc="51" lloc="25" ncloc="65"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Requests\ProfileUpdateRequest.php" loc="24" cloc="5" eloc="15" lloc="6" ncloc="19"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Listeners\OrderCompletedListener.php" loc="26" cloc="0" eloc="21" lloc="14" ncloc="26"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Mail\OrderCompletedMail.php" loc="55" cloc="11" eloc="35" lloc="18" ncloc="44"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Mail\OrderReceived.php" loc="54" cloc="0" eloc="45" lloc="22" ncloc="54"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Models\BillingDetail.php" loc="27" cloc="0" eloc="22" lloc="8" ncloc="27"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Models\Category.php" loc="22" cloc="0" eloc="16" lloc="7" ncloc="22"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Models\Order.php" loc="44" cloc="0" eloc="36" lloc="21" ncloc="44"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Models\OrderItem.php" loc="24" cloc="0" eloc="17" lloc="9" ncloc="24"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Models\Product.php" loc="30" cloc="0" eloc="24" lloc="7" ncloc="30"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Models\User.php" loc="58" cloc="16" eloc="33" lloc="16" ncloc="42"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Providers\AppServiceProvider.php" loc="29" cloc="11" eloc="13" lloc="5" ncloc="18"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Providers\AuthServiceProvider.php" loc="27" cloc="11" eloc="11" lloc="4" ncloc="16"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Providers\BroadcastServiceProvider.php" loc="20" cloc="3" eloc="12" lloc="6" ncloc="17"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Providers\EventServiceProvider.php" loc="45" cloc="12" eloc="26" lloc="11" ncloc="33"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Providers\RouteServiceProvider.php" loc="41" cloc="10" eloc="17" lloc="8" ncloc="31"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\View\Components\AppLayout.php" loc="18" cloc="3" eloc="11" lloc="5" ncloc="15"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\View\Components\GuestLayout.php" loc="18" cloc="3" eloc="11" lloc="5" ncloc="15"/>
+    <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\services\InvoiceService.php" loc="65" cloc="5" eloc="51" lloc="12" ncloc="60"/>
+  </files>
+  <package name="App\Console" noc="1" noi="0" nom="2" nof="0" cr="0.15" rcr="0.2775">
+    <class name="Kernel" fqname="App\Console\Kernel" start="8" end="27" loc="20" cloc="7" eloc="6" lloc="2" ncloc="13" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.2775" ca="0" cbo="1" ce="1" impl="0" cis="0" csz="2" npm="0" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Console\Kernel.php"/>
+      <method name="schedule" start="13" end="16" ccn="1" ccn2="1" loc="4" cloc="1" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="commands" start="21" end="26" ccn="1" ccn2="1" loc="6" cloc="0" eloc="4" lloc="2" ncloc="6" npath="1" hnt="13" hnd="11" hv="44.972611042285" hd="4.8" hl="0.20833333333333" he="215.86853300297" ht="11.992696277943" hb="0.011995130357899" hi="9.3692939671427" mi="75.158217726801"/>
+    </class>
+  </package>
+  <package name="App\Events" noc="1" noi="0" nom="2" nof="0" cr="0.15" rcr="0.15">
+    <class name="OrderStatusChanged" fqname="App\Events\OrderStatusChanged" start="14" end="38" loc="25" cloc="8" eloc="8" lloc="2" ncloc="17" dit="0" noam="0" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.15" ca="3" cbo="2" ce="2" impl="0" cis="3" csz="3" npm="2" vars="1" varsi="1" varsnp="1" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Events\OrderStatusChanged.php"/>
+      <method name="__construct" start="22" end="25" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="broadcastOn" start="32" end="37" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="9" hnd="9" hv="28.529325012981" hd="12.25" hl="0.081632653061224" he="349.48423140901" ht="19.415790633834" hb="0.016538538763157" hi="2.3289244908556" mi="74.428220343202"/>
+    </class>
+  </package>
+  <package name="App\Exceptions" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.2775">
+    <class name="Handler" fqname="App\Exceptions\Handler" start="8" end="30" loc="23" cloc="9" eloc="4" lloc="2" ncloc="14" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.2775" ca="0" cbo="1" ce="1" impl="0" cis="1" csz="2" npm="1" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Exceptions\Handler.php"/>
+      <method name="register" start="24" end="29" ccn="1" ccn2="1" loc="6" cloc="1" eloc="4" lloc="2" ncloc="5" npath="1" hnt="6" hnd="5" hv="13.931568569324" hd="10" hl="0.1" he="139.31568569324" ht="7.7397603162912" hb="0.0089580212809549" hi="1.3931568569324" mi="78.72187891646"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources" noc="7" noi="0" nom="26" nof="0" cr="0.15" rcr="0.2775">
+    <class name="BillingDetailResource" fqname="App\Filament\Resources\BillingDetailResource" start="18" end="76" loc="59" cloc="3" eloc="40" lloc="4" ncloc="56" dit="2" noam="4" nocc="0" noom="0" nom="4" cr="0.15" rcr="0.17125" ca="0" cbo="10" ce="10" impl="0" cis="4" csz="7" npm="4" vars="3" varsi="3" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\BillingDetailResource.php"/>
+      <method name="form" start="26" end="32" ccn="1" ccn2="1" loc="7" cloc="1" eloc="5" lloc="1" ncloc="6" npath="1" hnt="8" hnd="8" hv="24" hd="24.5" hl="0.040816326530612" he="588" ht="32.666666666667" hb="0.023395390363168" hi="0.97959183673469" mi="74.953933275297"/>
+      <method name="table" start="34" end="59" ccn="1" ccn2="1" loc="26" cloc="1" eloc="24" lloc="1" ncloc="25" npath="1" hnt="107" hnd="27" hv="508.77296273149" hd="17" hl="0.058823529411765" he="8649.1403664353" ht="480.5077981353" hb="0.14045182137275" hi="29.927821337147" mi="50.806501881553"/>
+      <method name="getRelations" start="61" end="66" ccn="1" ccn2="1" loc="6" cloc="1" eloc="4" lloc="1" ncloc="5" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="18" hl="0.055555555555556" he="279.17595007788" ht="15.509775004327" hb="0.0142384947835" hi="0.86165416690705" mi="78.39554672677"/>
+      <method name="getPages" start="68" end="75" ccn="1" ccn2="1" loc="8" cloc="0" eloc="7" lloc="1" ncloc="8" npath="1" hnt="30" hnd="20" hv="129.65784284662" hd="9" hl="0.11111111111111" he="1166.9205856196" ht="64.82892142331" hb="0.036946469617141" hi="14.406426982958" mi="66.636713901601"/>
+    </class>
+    <class name="CategoryResource" fqname="App\Filament\Resources\CategoryResource" start="17" end="80" loc="64" cloc="2" eloc="46" lloc="6" ncloc="62" dit="2" noam="4" nocc="0" noom="0" nom="4" cr="0.15" rcr="0.17125" ca="0" cbo="12" ce="12" impl="0" cis="4" csz="7" npm="4" vars="3" varsi="3" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\CategoryResource.php"/>
+      <method name="form" start="25" end="43" ccn="1" ccn2="1" loc="19" cloc="0" eloc="18" lloc="3" ncloc="19" npath="1" hnt="62" hnd="25" hv="287.91908376603" hd="16.5" hl="0.060606060606061" he="4750.6648821395" ht="263.92582678553" hb="0.094199444664044" hi="17.449641440366" mi="55.263183753339"/>
+      <method name="table" start="45" end="63" ccn="1" ccn2="1" loc="19" cloc="1" eloc="17" lloc="1" ncloc="18" npath="1" hnt="67" hnd="22" hv="298.7819184487" hd="14.884615384615" hl="0.0671834625323" he="4447.2539399864" ht="247.06966333258" hb="0.090144665385342" hi="20.073203823427" mi="55.692065117609"/>
+      <method name="getRelations" start="65" end="70" ccn="1" ccn2="1" loc="6" cloc="1" eloc="4" lloc="1" ncloc="5" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="18" hl="0.055555555555556" he="279.17595007788" ht="15.509775004327" hb="0.0142384947835" hi="0.86165416690705" mi="78.39554672677"/>
+      <method name="getPages" start="72" end="79" ccn="1" ccn2="1" loc="8" cloc="0" eloc="7" lloc="1" ncloc="8" npath="1" hnt="30" hnd="20" hv="129.65784284662" hd="9" hl="0.11111111111111" he="1166.9205856196" ht="64.82892142331" hb="0.036946469617141" hi="14.406426982958" mi="66.636713901601"/>
+    </class>
+    <class name="OrderForm" fqname="App\Filament\Resources\OrderForm" start="9" end="40" loc="32" cloc="1" eloc="22" lloc="11" ncloc="31" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.2775" ca="0" cbo="2" ce="2" impl="0" cis="0" csz="2" npm="0" vars="0" varsi="0" varsnp="0" wmc="6" wmci="6" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderForm.php"/>
+      <method name="setUp" start="11" end="31" ccn="3" ccn2="3" loc="21" cloc="1" eloc="16" lloc="8" ncloc="20" npath="4" hnt="36" hnd="20" hv="155.58941141595" hd="16.5" hl="0.060606060606061" he="2567.2252883631" ht="142.62362713128" hb="0.062496361447315" hi="9.4296612979361" mi="57.981588181767"/>
+      <method name="handleStatusChange" start="33" end="39" ccn="2" ccn2="3" loc="7" cloc="0" eloc="6" lloc="3" ncloc="7" npath="3" hnt="22" hnd="16" hv="88" hd="8.3571428571429" hl="0.11965811965812" he="735.42857142857" ht="40.857142857143" hb="0.027158497778902" hi="10.529914529915" mi="69.006634598374"/>
+    </class>
+    <class name="OrderItemResource" fqname="App\Filament\Resources\OrderItemResource" start="18" end="110" loc="93" cloc="2" eloc="75" lloc="4" ncloc="91" dit="2" noam="4" nocc="0" noom="0" nom="4" cr="0.15" rcr="0.17125" ca="0" cbo="15" ce="15" impl="0" cis="4" csz="7" npm="4" vars="3" varsi="3" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderItemResource.php"/>
+      <method name="form" start="26" end="53" ccn="1" ccn2="1" loc="28" cloc="0" eloc="27" lloc="1" ncloc="28" npath="1" hnt="107" hnd="29" hv="519.80396647865" hd="14.175" hl="0.070546737213404" he="7368.2212248349" ht="409.34562360194" hb="0.12621777394769" hi="36.670473825654" mi="49.625434886172"/>
+      <method name="table" start="55" end="93" ccn="1" ccn2="1" loc="39" cloc="1" eloc="37" lloc="1" ncloc="38" npath="1" hnt="138" hnd="45" hv="757.8757272935" hd="11.714285714286" hl="0.085365853658537" he="8877.9728054381" ht="493.22071141323" hb="0.14291833637455" hi="64.696708427493" mi="45.493818017635"/>
+      <method name="getRelations" start="95" end="100" ccn="1" ccn2="1" loc="6" cloc="1" eloc="4" lloc="1" ncloc="5" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="18" hl="0.055555555555556" he="279.17595007788" ht="15.509775004327" hb="0.0142384947835" hi="0.86165416690705" mi="78.39554672677"/>
+      <method name="getPages" start="102" end="109" ccn="1" ccn2="1" loc="8" cloc="0" eloc="7" lloc="1" ncloc="8" npath="1" hnt="30" hnd="20" hv="129.65784284662" hd="9" hl="0.11111111111111" he="1166.9205856196" ht="64.82892142331" hb="0.036946469617141" hi="14.406426982958" mi="66.636713901601"/>
+    </class>
+    <class name="OrderResource" fqname="App\Filament\Resources\OrderResource" start="20" end="106" loc="87" cloc="2" eloc="69" lloc="4" ncloc="85" dit="2" noam="4" nocc="0" noom="0" nom="4" cr="0.15" rcr="0.17125" ca="0" cbo="14" ce="14" impl="0" cis="4" csz="7" npm="4" vars="3" varsi="3" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderResource.php"/>
+      <method name="form" start="28" end="48" ccn="1" ccn2="1" loc="21" cloc="0" eloc="20" lloc="1" ncloc="21" npath="1" hnt="67" hnd="30" hv="328.76166990577" hd="10" hl="0.1" he="3287.6166990577" ht="182.64537216987" hb="0.073699780957691" hi="32.876166990577" mi="53.861640437965"/>
+      <method name="table" start="50" end="89" ccn="1" ccn2="1" loc="40" cloc="1" eloc="38" lloc="1" ncloc="39" npath="1" hnt="151" hnd="49" hv="847.8211864614" hd="11.410256410256" hl="0.087640449438202" he="9673.8571275723" ht="537.43650708735" hb="0.15133702465152" hi="74.303429824707" mi="44.90012954389"/>
+      <method name="getRelations" start="91" end="96" ccn="1" ccn2="1" loc="6" cloc="1" eloc="4" lloc="1" ncloc="5" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="18" hl="0.055555555555556" he="279.17595007788" ht="15.509775004327" hb="0.0142384947835" hi="0.86165416690705" mi="78.39554672677"/>
+      <method name="getPages" start="98" end="105" ccn="1" ccn2="1" loc="8" cloc="0" eloc="7" lloc="1" ncloc="8" npath="1" hnt="30" hnd="20" hv="129.65784284662" hd="9" hl="0.11111111111111" he="1166.9205856196" ht="64.82892142331" hb="0.036946469617141" hi="14.406426982958" mi="66.636713901601"/>
+    </class>
+    <class name="ProductResource" fqname="App\Filament\Resources\ProductResource" start="33" end="166" loc="134" cloc="1" eloc="116" lloc="12" ncloc="133" dit="2" noam="4" nocc="0" noom="0" nom="4" cr="0.15" rcr="0.17125" ca="0" cbo="19" ce="19" impl="0" cis="4" csz="7" npm="4" vars="3" varsi="3" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\ProductResource.php"/>
+      <method name="form" start="41" end="121" ccn="1" ccn2="1" loc="81" cloc="0" eloc="79" lloc="9" ncloc="81" npath="1" hnt="263" hnd="78" hv="1653.0607835608" hd="14.9" hl="0.067114093959732" he="24630.605675055" ht="1368.3669819475" hb="0.28218167445748" hi="110.94367674905" mi="35.9362272937"/>
+      <method name="table" start="123" end="149" ccn="1" ccn2="1" loc="27" cloc="1" eloc="25" lloc="1" ncloc="26" npath="1" hnt="114" hnd="32" hv="570" hd="13.5" hl="0.074074074074074" he="7695" ht="427.5" hb="0.12992253767859" hi="42.222222222222" mi="50.074212023875"/>
+      <method name="getRelations" start="151" end="156" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="8" hnd="8" hv="24" hd="24.5" hl="0.040816326530612" he="588" ht="32.666666666667" hb="0.023395390363168" hi="0.97959183673469" mi="74.953933275297"/>
+      <method name="getPages" start="158" end="165" ccn="1" ccn2="1" loc="8" cloc="0" eloc="7" lloc="1" ncloc="8" npath="1" hnt="30" hnd="20" hv="129.65784284662" hd="9" hl="0.11111111111111" he="1166.9205856196" ht="64.82892142331" hb="0.036946469617141" hi="14.406426982958" mi="66.636713901601"/>
+    </class>
+    <class name="UserResource" fqname="App\Filament\Resources\UserResource" start="16" end="73" loc="58" cloc="2" eloc="40" lloc="4" ncloc="56" dit="2" noam="4" nocc="0" noom="0" nom="4" cr="0.15" rcr="0.17125" ca="0" cbo="10" ce="10" impl="0" cis="4" csz="7" npm="4" vars="3" varsi="3" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\UserResource.php"/>
+      <method name="form" start="24" end="35" ccn="1" ccn2="1" loc="12" cloc="0" eloc="11" lloc="1" ncloc="12" npath="1" hnt="35" hnd="16" hv="140" hd="14.142857142857" hl="0.070707070707071" he="1980" ht="110" hb="0.052560022054947" hi="9.8989898989899" mi="62.121377767894"/>
+      <method name="table" start="37" end="56" ccn="1" ccn2="1" loc="20" cloc="1" eloc="18" lloc="1" ncloc="19" npath="1" hnt="79" hnd="24" hv="362.21203755697" hd="15" hl="0.066666666666667" he="5433.1805633546" ht="301.84336463081" hb="0.10301840878935" hi="24.147469170465" mi="54.565136063693"/>
+      <method name="getRelations" start="58" end="63" ccn="1" ccn2="1" loc="6" cloc="1" eloc="4" lloc="1" ncloc="5" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="18" hl="0.055555555555556" he="279.17595007788" ht="15.509775004327" hb="0.0142384947835" hi="0.86165416690705" mi="78.39554672677"/>
+      <method name="getPages" start="65" end="72" ccn="1" ccn2="1" loc="8" cloc="0" eloc="7" lloc="1" ncloc="8" npath="1" hnt="30" hnd="20" hv="129.65784284662" hd="9" hl="0.11111111111111" he="1166.9205856196" ht="64.82892142331" hb="0.036946469617141" hi="14.406426982958" mi="66.636713901601"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\BillingDetailResource\Pages" noc="3" noi="0" nom="2" nof="0" cr="0.15" rcr="0.17125">
+    <class name="CreateBillingDetail" fqname="App\Filament\Resources\BillingDetailResource\Pages\CreateBillingDetail" start="9" end="12" loc="4" cloc="0" eloc="0" lloc="0" ncloc="4" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.17125" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="1" npm="0" vars="1" varsi="1" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\BillingDetailResource\Pages\CreateBillingDetail.php"/>
+    </class>
+    <class name="EditBillingDetail" fqname="App\Filament\Resources\BillingDetailResource\Pages\EditBillingDetail" start="9" end="19" loc="11" cloc="0" eloc="5" lloc="1" ncloc="11" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.17125" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\BillingDetailResource\Pages\EditBillingDetail.php"/>
+      <method name="getActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="10" hnd="10" hv="33.219280948874" hd="16" hl="0.0625" he="531.50849518198" ht="29.528249732332" hb="0.021871851680476" hi="2.0762050593046" mi="73.965396159465"/>
+    </class>
+    <class name="ListBillingDetails" fqname="App\Filament\Resources\BillingDetailResource\Pages\ListBillingDetails" start="9" end="19" loc="11" cloc="0" eloc="5" lloc="1" ncloc="11" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.17125" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\BillingDetailResource\Pages\ListBillingDetails.php"/>
+      <method name="getActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="10" hnd="10" hv="33.219280948874" hd="16" hl="0.0625" he="531.50849518198" ht="29.528249732332" hb="0.021871851680476" hi="2.0762050593046" mi="73.965396159465"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\CategoryResource\Pages" noc="3" noi="0" nom="4" nof="0" cr="0.15" rcr="0.17125">
+    <class name="CreateCategory" fqname="App\Filament\Resources\CategoryResource\Pages\CreateCategory" start="9" end="17" loc="9" cloc="0" eloc="3" lloc="1" ncloc="9" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.17125" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\CategoryResource\Pages\CreateCategory.php"/>
+      <method name="getRedirectUrl" start="13" end="16" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+    <class name="EditCategory" fqname="App\Filament\Resources\CategoryResource\Pages\EditCategory" start="9" end="24" loc="16" cloc="0" eloc="8" lloc="2" ncloc="16" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.17125" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="3" npm="0" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\CategoryResource\Pages\EditCategory.php"/>
+      <method name="getActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="10" hnd="10" hv="33.219280948874" hd="16" hl="0.0625" he="531.50849518198" ht="29.528249732332" hb="0.021871851680476" hi="2.0762050593046" mi="73.965396159465"/>
+      <method name="getRedirectUrl" start="20" end="23" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+    <class name="ListCategories" fqname="App\Filament\Resources\CategoryResource\Pages\ListCategories" start="9" end="19" loc="11" cloc="0" eloc="5" lloc="1" ncloc="11" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.17125" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\CategoryResource\Pages\ListCategories.php"/>
+      <method name="getActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="10" hnd="10" hv="33.219280948874" hd="16" hl="0.0625" he="531.50849518198" ht="29.528249732332" hb="0.021871851680476" hi="2.0762050593046" mi="73.965396159465"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\CategoryResource\RelationManagers" noc="1" noi="0" nom="2" nof="0" cr="0.15" rcr="0.21375">
+    <class name="CategoriesRelationManager" fqname="App\Filament\Resources\CategoryResource\RelationManagers\CategoriesRelationManager" start="14" end="61" loc="48" cloc="1" eloc="37" lloc="4" ncloc="47" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.21375" ca="1" cbo="10" ce="10" impl="0" cis="2" csz="4" npm="2" vars="2" varsi="2" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\CategoryResource\RelationManagers\CategoriesRelationManager.php"/>
+      <method name="form" start="20" end="38" ccn="1" ccn2="1" loc="19" cloc="0" eloc="18" lloc="3" ncloc="19" npath="1" hnt="62" hnd="25" hv="287.91908376603" hd="16.5" hl="0.060606060606061" he="4750.6648821395" ht="263.92582678553" hb="0.094199444664044" hi="17.449641440366" mi="55.263183753339"/>
+      <method name="table" start="40" end="60" ccn="1" ccn2="1" loc="21" cloc="1" eloc="19" lloc="1" ncloc="20" npath="1" hnt="60" hnd="20" hv="259.31568569324" hd="15.954545454545" hl="0.062678062678063" he="4137.2638944694" ht="229.84799413719" hb="0.085905484992548" hi="16.253404801286" mi="55.069151102355"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\OrderItemResource\Pages" noc="3" noi="0" nom="2" nof="0" cr="0.15" rcr="0.17125">
+    <class name="CreateOrderItem" fqname="App\Filament\Resources\OrderItemResource\Pages\CreateOrderItem" start="9" end="12" loc="4" cloc="0" eloc="0" lloc="0" ncloc="4" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.17125" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="1" npm="0" vars="1" varsi="1" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderItemResource\Pages\CreateOrderItem.php"/>
+    </class>
+    <class name="EditOrderItem" fqname="App\Filament\Resources\OrderItemResource\Pages\EditOrderItem" start="9" end="19" loc="11" cloc="0" eloc="5" lloc="1" ncloc="11" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.17125" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderItemResource\Pages\EditOrderItem.php"/>
+      <method name="getActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="10" hnd="10" hv="33.219280948874" hd="16" hl="0.0625" he="531.50849518198" ht="29.528249732332" hb="0.021871851680476" hi="2.0762050593046" mi="73.965396159465"/>
+    </class>
+    <class name="ListOrderItems" fqname="App\Filament\Resources\OrderItemResource\Pages\ListOrderItems" start="9" end="19" loc="11" cloc="0" eloc="5" lloc="1" ncloc="11" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.17125" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderItemResource\Pages\ListOrderItems.php"/>
+      <method name="getActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="10" hnd="10" hv="33.219280948874" hd="16" hl="0.0625" he="531.50849518198" ht="29.528249732332" hb="0.021871851680476" hi="2.0762050593046" mi="73.965396159465"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\OrderItemResource\RelationManagers" noc="1" noi="0" nom="2" nof="0" cr="0.15" rcr="0.21375">
+    <class name="OrdersRelationManager" fqname="App\Filament\Resources\OrderItemResource\RelationManagers\OrdersRelationManager" start="13" end="49" loc="37" cloc="1" eloc="26" lloc="2" ncloc="36" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.21375" ca="0" cbo="8" ce="8" impl="0" cis="2" csz="4" npm="2" vars="2" varsi="2" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderItemResource\RelationManagers\OrdersRelationManager.php"/>
+      <method name="form" start="19" end="27" ccn="1" ccn2="1" loc="9" cloc="0" eloc="8" lloc="1" ncloc="9" npath="1" hnt="19" hnd="15" hv="74.230921316562" hd="9.75" hl="0.1025641025641" he="723.75148283648" ht="40.208415713138" hb="0.026870250980694" hi="7.6134278273397" mi="67.067664855409"/>
+      <method name="table" start="29" end="48" ccn="1" ccn2="1" loc="20" cloc="1" eloc="18" lloc="1" ncloc="19" npath="1" hnt="52" hnd="19" hv="220.89223069907" hd="15.75" hl="0.063492063492063" he="3479.0526335103" ht="193.28070186168" hb="0.076533706168349" hi="14.024903536449" mi="56.069045521005"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\OrderResource\Pages" noc="3" noi="0" nom="6" nof="0" cr="0.15" rcr="0.17125">
+    <class name="CreateOrder" fqname="App\Filament\Resources\OrderResource\Pages\CreateOrder" start="9" end="17" loc="9" cloc="0" eloc="3" lloc="1" ncloc="9" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.17125" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderResource\Pages\CreateOrder.php"/>
+      <method name="getRedirectUrl" start="13" end="16" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+    <class name="EditOrder" fqname="App\Filament\Resources\OrderResource\Pages\EditOrder" start="9" end="24" loc="16" cloc="0" eloc="8" lloc="2" ncloc="16" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.17125" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="3" npm="0" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderResource\Pages\EditOrder.php"/>
+      <method name="getActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="10" hnd="10" hv="33.219280948874" hd="16" hl="0.0625" he="531.50849518198" ht="29.528249732332" hb="0.021871851680476" hi="2.0762050593046" mi="73.965396159465"/>
+      <method name="getRedirectUrl" start="20" end="23" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+    <class name="ListOrders" fqname="App\Filament\Resources\OrderResource\Pages\ListOrders" start="10" end="32" loc="23" cloc="0" eloc="13" lloc="3" ncloc="23" dit="2" noam="3" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.17125" ca="1" cbo="2" ce="2" impl="0" cis="0" csz="4" npm="0" vars="1" varsi="1" varsnp="0" wmc="3" wmci="3" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderResource\Pages\ListOrders.php"/>
+      <method name="getActions" start="14" end="19" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="10" hnd="10" hv="33.219280948874" hd="16" hl="0.0625" he="531.50849518198" ht="29.528249732332" hb="0.021871851680476" hi="2.0762050593046" mi="73.965396159465"/>
+      <method name="getTableBulkActions" start="21" end="26" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="9" hnd="9" hv="28.529325012981" hd="12.25" hl="0.081632653061224" he="349.48423140901" ht="19.415790633834" hb="0.016538538763157" hi="2.3289244908556" mi="74.428220343202"/>
+      <method name="getRedirectUrl" start="28" end="31" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\OrderResource\Widgets" noc="1" noi="0" nom="2" nof="0" cr="0.15" rcr="0.21375">
+    <class name="statsOverview" fqname="App\Filament\Resources\OrderResource\Widgets\statsOverview" start="9" end="25" loc="17" cloc="1" eloc="9" lloc="2" ncloc="16" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.21375" ca="0" cbo="1" ce="1" impl="0" cis="2" csz="3" npm="1" vars="1" varsi="1" varsnp="1" wmc="2" wmci="2" wmcnp="1">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\OrderResource\Widgets\statsOverview.php"/>
+      <method name="getCards" start="12" end="17" ccn="1" ccn2="1" loc="6" cloc="1" eloc="4" lloc="1" ncloc="5" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="12.5" hl="0.08" he="145.12050593046" ht="8.06225032947" hb="0.0092051584355002" hi="0.92877123795494" mi="79.276307042383"/>
+      <method name="getWidgets" start="19" end="24" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="10" hnd="10" hv="33.219280948874" hd="16" hl="0.0625" he="531.50849518198" ht="29.528249732332" hb="0.021871851680476" hi="2.0762050593046" mi="73.965396159465"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\ProductResource\Pages" noc="3" noi="0" nom="5" nof="0" cr="0.15" rcr="0.17125">
+    <class name="CreateProduct" fqname="App\Filament\Resources\ProductResource\Pages\CreateProduct" start="9" end="17" loc="9" cloc="0" eloc="3" lloc="1" ncloc="9" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.17125" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\ProductResource\Pages\CreateProduct.php"/>
+      <method name="getRedirectUrl" start="13" end="16" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+    <class name="EditProduct" fqname="App\Filament\Resources\ProductResource\Pages\EditProduct" start="9" end="24" loc="16" cloc="0" eloc="8" lloc="2" ncloc="16" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.17125" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="3" npm="0" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\ProductResource\Pages\EditProduct.php"/>
+      <method name="getActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="10" hnd="10" hv="33.219280948874" hd="16" hl="0.0625" he="531.50849518198" ht="29.528249732332" hb="0.021871851680476" hi="2.0762050593046" mi="73.965396159465"/>
+      <method name="getRedirectUrl" start="20" end="23" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+    <class name="ListProducts" fqname="App\Filament\Resources\ProductResource\Pages\ListProducts" start="9" end="24" loc="16" cloc="0" eloc="8" lloc="2" ncloc="16" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.17125" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="3" npm="0" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\ProductResource\Pages\ListProducts.php"/>
+      <method name="getActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="10" hnd="10" hv="33.219280948874" hd="16" hl="0.0625" he="531.50849518198" ht="29.528249732332" hb="0.021871851680476" hi="2.0762050593046" mi="73.965396159465"/>
+      <method name="getRedirectUrl" start="20" end="23" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+    </class>
+  </package>
+  <package name="App\Filament\Resources\UserResource\Pages" noc="3" noi="0" nom="2" nof="0" cr="0.15" rcr="0.17125">
+    <class name="CreateUser" fqname="App\Filament\Resources\UserResource\Pages\CreateUser" start="9" end="12" loc="4" cloc="0" eloc="0" lloc="0" ncloc="4" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.17125" ca="1" cbo="0" ce="0" impl="0" cis="0" csz="1" npm="0" vars="1" varsi="1" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\UserResource\Pages\CreateUser.php"/>
+    </class>
+    <class name="EditUser" fqname="App\Filament\Resources\UserResource\Pages\EditUser" start="9" end="19" loc="11" cloc="0" eloc="5" lloc="1" ncloc="11" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.17125" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\UserResource\Pages\EditUser.php"/>
+      <method name="getActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="10" hnd="10" hv="33.219280948874" hd="16" hl="0.0625" he="531.50849518198" ht="29.528249732332" hb="0.021871851680476" hi="2.0762050593046" mi="73.965396159465"/>
+    </class>
+    <class name="ListUsers" fqname="App\Filament\Resources\UserResource\Pages\ListUsers" start="9" end="19" loc="11" cloc="0" eloc="5" lloc="1" ncloc="11" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.17125" ca="1" cbo="1" ce="1" impl="0" cis="0" csz="2" npm="0" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Resources\UserResource\Pages\ListUsers.php"/>
+      <method name="getActions" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="10" hnd="10" hv="33.219280948874" hd="16" hl="0.0625" he="531.50849518198" ht="29.528249732332" hb="0.021871851680476" hi="2.0762050593046" mi="73.965396159465"/>
+    </class>
+  </package>
+  <package name="App\Filament\Widgets" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.21375">
+    <class name="statsOverview" fqname="App\Filament\Widgets\statsOverview" start="9" end="31" loc="23" cloc="0" eloc="19" lloc="4" ncloc="23" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.21375" ca="0" cbo="2" ce="2" impl="0" cis="0" csz="1" npm="0" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Filament\Widgets\statsOverview.php"/>
+      <method name="getCards" start="11" end="30" ccn="1" ccn2="1" loc="20" cloc="0" eloc="19" lloc="4" ncloc="20" npath="1" hnt="85" hnd="38" hv="446.0738386427" hd="7.1379310344828" hl="0.14009661835749" he="3184.0442965186" ht="176.89134980659" hb="0.072143655805184" hi="62.493436331587" mi="53.4196310873"/>
+    </class>
+  </package>
+  <package name="App\Http\Controllers\Auth" noc="9" noi="0" nom="15" nof="0" cr="0.15" rcr="0.385875">
+    <class name="AuthenticatedSessionController" fqname="App\Http\Controllers\Auth\AuthenticatedSessionController" start="13" end="48" loc="36" cloc="9" eloc="14" lloc="8" ncloc="27" dit="3" noam="3" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.17144318181818" ca="0" cbo="6" ce="6" impl="0" cis="3" csz="3" npm="3" vars="0" varsi="0" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\AuthenticatedSessionController.php"/>
+      <method name="create" start="18" end="21" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="store" start="26" end="33" ccn="1" ccn2="1" loc="8" cloc="0" eloc="5" lloc="3" ncloc="8" npath="1" hnt="15" hnd="9" hv="47.548875021635" hd="6.875" hl="0.14545454545455" he="326.89851577374" ht="18.161028654097" hb="0.01581809008129" hi="6.9162000031469" mi="72.874832481458"/>
+      <method name="destroy" start="38" end="47" ccn="1" ccn2="1" loc="10" cloc="0" eloc="6" lloc="4" ncloc="10" npath="1" hnt="20" hnd="11" hv="69.188632372746" hd="5.8333333333333" hl="0.17142857142857" he="403.60035550768" ht="22.422241972649" hb="0.018204542621838" hi="11.860908406756" mi="70.006986197542"/>
+    </class>
+    <class name="ConfirmablePasswordController" fqname="App\Http\Controllers\Auth\ConfirmablePasswordController" start="13" end="41" loc="29" cloc="6" eloc="15" lloc="5" ncloc="23" dit="3" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.17144318181818" ca="0" cbo="6" ce="6" impl="0" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\ConfirmablePasswordController.php"/>
+      <method name="show" start="18" end="21" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="store" start="26" end="40" ccn="2" ccn2="2" loc="15" cloc="0" eloc="12" lloc="4" ncloc="15" npath="2" hnt="44" hnd="25" hv="204.32967235009" hd="11.392857142857" hl="0.087774294670846" he="2327.8987671314" ht="129.32770928508" hb="0.058549268321962" hi="17.934892870854" mi="60.01280214937"/>
+    </class>
+    <class name="EmailVerificationNotificationController" fqname="App\Http\Controllers\Auth\EmailVerificationNotificationController" start="10" end="25" loc="16" cloc="3" eloc="7" lloc="4" ncloc="13" dit="3" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.17144318181818" ca="0" cbo="3" ce="3" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\EmailVerificationNotificationController.php"/>
+      <method name="store" start="15" end="24" ccn="2" ccn2="2" loc="10" cloc="0" eloc="7" lloc="4" ncloc="10" npath="2" hnt="25" hnd="14" hv="95.18387305144" hd="9" hl="0.11111111111111" he="856.65485746296" ht="47.59193652572" hb="0.0300664855348" hi="10.575985894604" mi="67.442129149896"/>
+    </class>
+    <class name="EmailVerificationPromptController" fqname="App\Http\Controllers\Auth\EmailVerificationPromptController" start="11" end="22" loc="12" cloc="3" eloc="5" lloc="1" ncloc="9" dit="3" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.17144318181818" ca="0" cbo="4" ce="4" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\EmailVerificationPromptController.php"/>
+      <method name="__invoke" start="16" end="21" ccn="2" ccn2="2" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="2" hnt="15" hnd="11" hv="51.891474279559" hd="6" hl="0.16666666666667" he="311.34884567736" ht="17.297158093186" hb="0.015312411273262" hi="8.6485790465932" mi="72.474562803864"/>
+    </class>
+    <class name="NewPasswordController" fqname="App\Http\Controllers\Auth\NewPasswordController" start="15" end="61" loc="47" cloc="14" eloc="24" lloc="7" ncloc="33" dit="3" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.17144318181818" ca="0" cbo="9" ce="9" impl="0" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\NewPasswordController.php"/>
+      <method name="create" start="20" end="23" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="12" hnd="12" hv="43.019550008654" hd="8" hl="0.125" he="344.15640006923" ht="19.119800003846" hb="0.01637002384934" hi="5.3774437510817" mi="78.018641328745"/>
+      <method name="store" start="30" end="60" ccn="2" ccn2="2" loc="31" cloc="6" eloc="21" lloc="6" ncloc="25" npath="2" hnt="98" hnd="40" hv="521.54895329896" hd="12.214285714286" hl="0.08187134502924" he="6370.3479295802" ht="353.90821831001" hb="0.1145480007955" hi="42.699914305178" mi="51.861614140211"/>
+    </class>
+    <class name="PasswordController" fqname="App\Http\Controllers\Auth\PasswordController" start="11" end="29" loc="19" cloc="3" eloc="10" lloc="3" ncloc="16" dit="3" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.17144318181818" ca="0" cbo="4" ce="4" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\PasswordController.php"/>
+      <method name="update" start="16" end="28" ccn="1" ccn2="1" loc="13" cloc="0" eloc="10" lloc="3" ncloc="13" npath="1" hnt="48" hnd="22" hv="214.05271769459" hd="10.384615384615" hl="0.096296296296296" he="2222.85514529" ht="123.49195251611" hb="0.05677443925648" hi="20.612483926146" mi="61.733196130076"/>
+    </class>
+    <class name="PasswordResetLinkController" fqname="App\Http\Controllers\Auth\PasswordResetLinkController" start="11" end="44" loc="34" cloc="11" eloc="15" lloc="4" ncloc="23" dit="3" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.17144318181818" ca="0" cbo="5" ce="5" impl="0" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\PasswordResetLinkController.php"/>
+      <method name="create" start="16" end="19" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="store" start="26" end="43" ccn="2" ccn2="2" loc="18" cloc="3" eloc="12" lloc="3" ncloc="15" npath="2" hnt="48" hnd="23" hv="217.13097389074" hd="12.833333333333" hl="0.077922077922078" he="2786.5141649311" ht="154.80634249617" hb="0.066006430665462" hi="16.919296666811" mi="59.828016629799"/>
+    </class>
+    <class name="RegisteredUserController" fqname="App\Http\Controllers\Auth\RegisteredUserController" start="16" end="51" loc="36" cloc="8" eloc="18" lloc="6" ncloc="28" dit="3" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.17144318181818" ca="0" cbo="10" ce="10" impl="0" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\RegisteredUserController.php"/>
+      <method name="create" start="21" end="24" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="store" start="31" end="50" ccn="1" ccn2="1" loc="20" cloc="0" eloc="15" lloc="5" ncloc="20" npath="1" hnt="77" hnd="34" hv="391.73463877628" hd="10.521739130435" hl="0.09504132231405" he="4121.7296775591" ht="228.98498208662" hb="0.085690316874689" hi="37.230978065514" mi="56.054120739818"/>
+    </class>
+    <class name="VerifyEmailController" fqname="App\Http\Controllers\Auth\VerifyEmailController" start="11" end="28" loc="18" cloc="3" eloc="9" lloc="5" ncloc="15" dit="3" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.17144318181818" ca="0" cbo="4" ce="4" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Auth\VerifyEmailController.php"/>
+      <method name="__invoke" start="16" end="27" ccn="3" ccn2="3" loc="12" cloc="0" eloc="9" lloc="5" ncloc="12" npath="4" hnt="35" hnd="15" hv="136.7411708463" hd="10.5" hl="0.095238095238095" he="1435.7822938861" ht="79.765682993674" hb="0.042423302539096" hi="13.022968652028" mi="63.825084501191"/>
+    </class>
+  </package>
+  <package name="App\Http\Controllers" noc="3" noi="0" nom="10" nof="0" cr="0.2775" rcr="0.2775">
+    <class name="Controller" fqname="App\Http\Controllers\Controller" start="9" end="12" loc="4" cloc="0" eloc="0" lloc="0" ncloc="4" dit="2" noam="0" nocc="11" noom="0" nom="0" cr="1.5525" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\Controller.php"/>
+    </class>
+    <class name="InvoiceController" fqname="App\Http\Controllers\InvoiceController" start="10" end="67" loc="58" cloc="27" eloc="15" lloc="1" ncloc="31" dit="3" noam="7" nocc="0" noom="0" nom="7" cr="0.15" rcr="0.17144318181818" ca="0" cbo="3" ce="3" impl="0" cis="7" csz="7" npm="7" vars="0" varsi="0" varsnp="0" wmc="7" wmci="7" wmcnp="7">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\InvoiceController.php"/>
+      <method name="index" start="15" end="18" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+      <method name="create" start="23" end="26" ccn="1" ccn2="1" loc="4" cloc="1" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="store" start="31" end="34" ccn="1" ccn2="1" loc="4" cloc="1" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="show" start="39" end="42" ccn="1" ccn2="1" loc="4" cloc="1" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="edit" start="47" end="50" ccn="1" ccn2="1" loc="4" cloc="1" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="update" start="55" end="58" ccn="1" ccn2="1" loc="4" cloc="1" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="destroy" start="63" end="66" ccn="1" ccn2="1" loc="4" cloc="1" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+    </class>
+    <class name="ProfileController" fqname="App\Http\Controllers\ProfileController" start="12" end="60" loc="49" cloc="9" eloc="24" lloc="13" ncloc="40" dit="3" noam="3" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.17144318181818" ca="0" cbo="6" ce="6" impl="0" cis="3" csz="3" npm="3" vars="0" varsi="0" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Controllers\ProfileController.php"/>
+      <method name="edit" start="17" end="22" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="14" hnd="12" hv="50.189475010096" hd="10" hl="0.1" he="501.89475010096" ht="27.883041672276" hb="0.021051700394515" hi="5.0189475010096" mi="72.710478381312"/>
+      <method name="update" start="27" end="38" ccn="2" ccn2="2" loc="12" cloc="0" eloc="8" lloc="5" ncloc="12" npath="2" hnt="32" hnd="19" hv="135.93368043019" hd="7.6363636363636" hl="0.13095238095238" he="1038.0390141942" ht="57.668834121901" hb="0.034173374266282" hi="17.800839103954" mi="65.093437418531"/>
+      <method name="destroy" start="43" end="59" ccn="1" ccn2="1" loc="17" cloc="0" eloc="11" lloc="7" ncloc="17" npath="1" hnt="39" hnd="22" hv="173.91783312685" hd="9" hl="0.11111111111111" he="1565.2604981417" ht="86.958916563427" hb="0.044936905492348" hi="19.324203680762" mi="61.461675535934"/>
+    </class>
+  </package>
+  <package name="App\Http" noc="1" noi="0" nom="0" nof="0" cr="0.15" rcr="0.1925">
+    <class name="Kernel" fqname="App\Http\Kernel" start="7" end="69" loc="63" cloc="21" eloc="0" lloc="0" ncloc="42" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="3" npm="0" vars="3" varsi="3" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Kernel.php"/>
+    </class>
+  </package>
+  <package name="App\Http\Livewire" noc="5" noi="0" nom="17" nof="0" cr="0.15" rcr="0.2775">
+    <class name="Cart" fqname="App\Http\Livewire\Cart" start="10" end="52" loc="43" cloc="0" eloc="34" lloc="22" ncloc="43" dit="2" noam="6" nocc="0" noom="0" nom="6" cr="0.15" rcr="0.1755" ca="0" cbo="3" ce="3" impl="0" cis="6" csz="6" npm="6" vars="0" varsi="0" varsnp="0" wmc="6" wmci="6" wmcnp="6">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Livewire\Cart.php"/>
+      <method name="addToCart" start="12" end="18" ccn="1" ccn2="1" loc="7" cloc="0" eloc="6" lloc="4" ncloc="7" npath="1" hnt="35" hnd="22" hv="156.08010665231" hd="4.6666666666667" hl="0.21428571428571" he="728.37383104409" ht="40.465212835783" hb="0.026984536823935" hi="33.44573713978" mi="67.533085277436"/>
+      <method name="incQty" start="19" end="26" ccn="1" ccn2="1" loc="8" cloc="0" eloc="7" lloc="5" ncloc="8" npath="1" hnt="30" hnd="18" hv="125.09775004327" hd="6.8" hl="0.14705882352941" he="850.66470029423" ht="47.259150016346" hb="0.029926161792036" hi="18.39672794754" mi="66.745590256531"/>
+      <method name="decQty" start="27" end="34" ccn="1" ccn2="1" loc="8" cloc="0" eloc="7" lloc="5" ncloc="8" npath="1" hnt="30" hnd="18" hv="125.09775004327" hd="6.8" hl="0.14705882352941" he="850.66470029423" ht="47.259150016346" hb="0.029926161792036" hi="18.39672794754" mi="66.745590256531"/>
+      <method name="destroyItem" start="35" end="41" ccn="1" ccn2="1" loc="7" cloc="0" eloc="6" lloc="4" ncloc="7" npath="1" hnt="22" hnd="14" hv="83.761808285267" hd="7" hl="0.14285714285714" he="586.33265799687" ht="32.574036555382" hb="0.02335114254498" hi="11.965972612181" mi="69.425739994956"/>
+      <method name="destroyCart" start="42" end="47" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="3" ncloc="6" npath="1" hnt="17" hnd="11" hv="58.810337516834" hd="7.2" hl="0.13888888888889" he="423.43443012121" ht="23.524135006734" hb="0.018796176917814" hi="8.1681024328936" mi="72.228452661548"/>
+      <method name="render" start="48" end="51" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+    <class name="Checkout" fqname="App\Http\Livewire\Checkout" start="16" end="132" loc="117" cloc="0" eloc="95" lloc="45" ncloc="117" dit="2" noam="5" nocc="0" noom="0" nom="5" cr="0.15" rcr="0.1755" ca="0" cbo="13" ce="13" impl="0" cis="5" csz="5" npm="5" vars="0" varsi="0" varsnp="0" wmc="12" wmci="12" wmcnp="12">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Livewire\Checkout.php"/>
+      <method name="stripeCheckout" start="19" end="64" ccn="3" ccn2="3" loc="46" cloc="0" eloc="41" lloc="13" ncloc="46" npath="4" hnt="165" hnd="70" hv="1011.3316977959" hd="12" hl="0.083333333333333" he="12135.980373551" ht="674.22113186395" hb="0.17603349930335" hi="84.277641482993" mi="43.374977542944"/>
+      <method name="success" start="66" end="90" ccn="4" ccn2="4" loc="25" cloc="0" eloc="23" lloc="18" ncloc="25" npath="5" hnt="112" hnd="50" hv="632.11189325477" hd="13.027777777778" hl="0.076759061833689" he="8235.0132760135" ht="457.50073755631" hb="0.13593197106567" hi="48.520315900153" mi="50.146110112964"/>
+      <method name="cancel" start="92" end="95" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="12" hnd="10" hv="39.863137138648" hd="6" hl="0.16666666666667" he="239.17882283189" ht="13.287712379549" hb="0.012843810659451" hi="6.6438561897747" mi="78.250368679746"/>
+      <method name="makeOrder" start="97" end="120" ccn="2" ccn2="2" loc="24" cloc="0" eloc="19" lloc="7" ncloc="24" npath="2" hnt="68" hnd="33" hv="343.01880011637" hd="11.428571428571" hl="0.0875" he="3920.2148584729" ht="217.7897143596" hb="0.082874068288915" hi="30.014145010183" mi="54.083979651292"/>
+      <method name="render" start="122" end="131" ccn="2" ccn2="2" loc="10" cloc="0" eloc="9" lloc="6" ncloc="10" npath="2" hnt="39" hnd="24" hv="178.81353752813" hd="7.2" hl="0.13888888888889" he="1287.4574702025" ht="71.52541501125" hb="0.039448819021434" hi="24.835213545573" mi="63.143845185345"/>
+    </class>
+    <class name="Dashboard" fqname="App\Http\Livewire\Dashboard" start="10" end="34" loc="25" cloc="0" eloc="14" lloc="5" ncloc="25" dit="2" noam="3" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.1755" ca="0" cbo="3" ce="3" impl="0" cis="3" csz="3" npm="3" vars="0" varsi="0" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Livewire\Dashboard.php"/>
+      <method name="invoicePdf" start="12" end="15" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="8" hnd="7" hv="22.458839376461" hd="7.5" hl="0.13333333333333" he="168.44129532346" ht="9.357849740192" hb="0.010166648149537" hi="2.9945119168614" mi="79.995159476497"/>
+      <method name="invoice" start="17" end="20" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="11" hnd="10" hv="36.541209043761" hd="5.25" hl="0.19047619047619" he="191.84134747975" ht="10.657852637764" hb="0.011087668241344" hi="6.9602302940497" mi="78.514964679948"/>
+      <method name="render" start="22" end="32" ccn="1" ccn2="1" loc="11" cloc="0" eloc="8" lloc="3" ncloc="11" npath="1" hnt="32" hnd="21" hv="140.55415752892" hd="4.5" hl="0.22222222222222" he="632.49370888014" ht="35.13853938223" hb="0.024561198331234" hi="31.234257228649" mi="65.126294773457"/>
+    </class>
+    <class name="Home" fqname="App\Http\Livewire\Home" start="11" end="76" loc="66" cloc="1" eloc="49" lloc="32" ncloc="65" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.1755" ca="0" cbo="3" ce="3" impl="0" cis="1" csz="2" npm="1" vars="0" varsi="0" varsnp="0" wmc="11" wmci="11" wmcnp="1">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Livewire\Home.php"/>
+      <method name="getProducts" start="15" end="58" ccn="9" ccn2="10" loc="44" cloc="1" eloc="35" lloc="25" ncloc="43" npath="144" hnt="172" hnd="57" hv="1003.2570824363" hd="19.317073170732" hl="0.051767676767677" he="19379.990470478" ht="1076.6661372488" hb="0.24049965150041" hi="51.936288358447" mi="43.956798039224"/>
+      <method name="render" start="61" end="75" ccn="1" ccn2="1" loc="15" cloc="0" eloc="14" lloc="7" ncloc="15" npath="1" hnt="65" hnd="27" hv="309.06768764063" hd="8.75" hl="0.11428571428571" he="2704.3422668555" ht="150.24123704753" hb="0.06470231940153" hi="35.322021444643" mi="57.428513254427"/>
+    </class>
+    <class name="ProductDetails" fqname="App\Http\Livewire\ProductDetails" start="8" end="21" loc="14" cloc="0" eloc="10" lloc="5" ncloc="14" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.1755" ca="0" cbo="1" ce="1" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Livewire\ProductDetails.php"/>
+      <method name="render" start="10" end="20" ccn="2" ccn2="2" loc="11" cloc="0" eloc="10" lloc="5" ncloc="11" npath="2" hnt="39" hnd="22" hv="173.91783312685" hd="11.5" hl="0.08695652173913" he="2000.0550809588" ht="111.11417116438" hb="0.052914339900836" hi="15.123289837118" mi="62.230111157472"/>
+    </class>
+  </package>
+  <package name="App\Http\Middleware" noc="10" noi="0" nom="4" nof="0" cr="0.15" rcr="0.7875">
+    <class name="AuthAdmin" fqname="App\Http\Middleware\AuthAdmin" start="10" end="26" loc="17" cloc="5" eloc="8" lloc="4" ncloc="12" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.15" ca="0" cbo="4" ce="4" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\AuthAdmin.php"/>
+      <method name="handle" start="17" end="25" ccn="2" ccn2="2" loc="9" cloc="0" eloc="8" lloc="4" ncloc="9" npath="2" hnt="25" hnd="16" hv="100" hd="8.5" hl="0.11764705882353" he="850" ht="47.222222222222" hb="0.029910570439377" hi="11.764705882353" mi="66.02699535535"/>
+    </class>
+    <class name="Authenticate" fqname="App\Http\Middleware\Authenticate" start="8" end="17" loc="10" cloc="3" eloc="3" lloc="1" ncloc="7" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.2775" ca="0" cbo="1" ce="1" impl="0" cis="0" csz="1" npm="0" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\Authenticate.php"/>
+      <method name="redirectTo" start="13" end="16" ccn="2" ccn2="2" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="2" hnt="11" hnd="10" hv="36.541209043761" hd="5.25" hl="0.19047619047619" he="191.84134747975" ht="10.657852637764" hb="0.011087668241344" hi="6.9602302940497" mi="78.380461755971"/>
+    </class>
+    <class name="EncryptCookies" fqname="App\Http\Middleware\EncryptCookies" start="7" end="17" loc="11" cloc="6" eloc="0" lloc="0" ncloc="5" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="1" npm="0" vars="1" varsi="1" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\EncryptCookies.php"/>
+    </class>
+    <class name="PreventRequestsDuringMaintenance" fqname="App\Http\Middleware\PreventRequestsDuringMaintenance" start="7" end="17" loc="11" cloc="6" eloc="0" lloc="0" ncloc="5" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="1" npm="0" vars="1" varsi="1" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\PreventRequestsDuringMaintenance.php"/>
+    </class>
+    <class name="RedirectIfAuthenticated" fqname="App\Http\Middleware\RedirectIfAuthenticated" start="11" end="30" loc="20" cloc="5" eloc="9" lloc="5" ncloc="15" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.15" ca="0" cbo="5" ce="5" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\RedirectIfAuthenticated.php"/>
+      <method name="handle" start="18" end="29" ccn="4" ccn2="4" loc="12" cloc="0" eloc="9" lloc="5" ncloc="12" npath="6" hnt="33" hnd="21" hv="144.9464749517" hd="14" hl="0.071428571428571" he="2029.2506493238" ht="112.73614718465" hb="0.053428035723716" hi="10.353319639407" mi="63.513372081819"/>
+    </class>
+    <class name="TrimStrings" fqname="App\Http\Middleware\TrimStrings" start="7" end="19" loc="13" cloc="5" eloc="0" lloc="0" ncloc="8" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="1" npm="0" vars="1" varsi="1" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\TrimStrings.php"/>
+    </class>
+    <class name="TrustHosts" fqname="App\Http\Middleware\TrustHosts" start="7" end="20" loc="14" cloc="5" eloc="5" lloc="1" ncloc="9" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\TrustHosts.php"/>
+      <method name="hosts" start="14" end="19" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="8" hnd="8" hv="24" hd="24.5" hl="0.040816326530612" he="588" ht="32.666666666667" hb="0.023395390363168" hi="0.97959183673469" mi="74.953933275297"/>
+    </class>
+    <class name="TrustProxies" fqname="App\Http\Middleware\TrustProxies" start="8" end="28" loc="21" cloc="10" eloc="0" lloc="0" ncloc="11" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="2" npm="0" vars="2" varsi="2" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\TrustProxies.php"/>
+    </class>
+    <class name="ValidateSignature" fqname="App\Http\Middleware\ValidateSignature" start="7" end="22" loc="16" cloc="11" eloc="0" lloc="0" ncloc="5" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="1" npm="0" vars="1" varsi="1" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\ValidateSignature.php"/>
+    </class>
+    <class name="VerifyCsrfToken" fqname="App\Http\Middleware\VerifyCsrfToken" start="7" end="17" loc="11" cloc="6" eloc="0" lloc="0" ncloc="5" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="1" npm="0" vars="1" varsi="1" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Middleware\VerifyCsrfToken.php"/>
+    </class>
+  </package>
+  <package name="App\Http\Requests\Auth" noc="1" noi="0" nom="5" nof="0" cr="0.15" rcr="0.1925">
+    <class name="LoginRequest" fqname="App\Http\Requests\Auth\LoginRequest" start="12" end="85" loc="74" cloc="21" eloc="35" lloc="13" ncloc="53" dit="2" noam="5" nocc="0" noom="0" nom="5" cr="0.15" rcr="0.21375" ca="1" cbo="5" ce="5" impl="0" cis="5" csz="5" npm="5" vars="0" varsi="0" varsnp="0" wmc="7" wmci="7" wmcnp="7">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Requests\Auth\LoginRequest.php"/>
+      <method name="authorize" start="17" end="20" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="rules" start="27" end="33" ccn="1" ccn2="1" loc="7" cloc="0" eloc="6" lloc="1" ncloc="7" npath="1" hnt="21" hnd="11" hv="72.648063991383" hd="12.25" hl="0.081632653061224" he="889.93878389444" ht="49.441043549691" hb="0.030840317081541" hi="5.9304542033782" mi="69.858618446851"/>
+      <method name="authenticate" start="40" end="53" ccn="2" ccn2="2" loc="14" cloc="0" eloc="10" lloc="5" ncloc="14" npath="2" hnt="40" hnd="23" hv="180.94247824228" hd="9.6153846153846" hl="0.104" he="1739.8315215604" ht="96.657306753355" hb="0.048218852978767" hi="18.818017737197" mi="62.109701609559"/>
+      <method name="ensureIsNotRateLimited" start="60" end="76" ccn="2" ccn2="2" loc="17" cloc="0" eloc="13" lloc="5" ncloc="17" npath="2" hnt="51" hnd="29" hv="247.75703075151" hd="13" hl="0.076923076923077" he="3220.8413997696" ht="178.93563332053" hb="0.072698419949037" hi="19.058233134731" mi="58.66847248116"/>
+      <method name="throttleKey" start="81" end="84" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="16" hnd="12" hv="57.359400011538" hd="5" hl="0.2" he="286.79700005769" ht="15.933166669872" hb="0.014496455101021" hi="11.471880002308" mi="77.143818652284"/>
+    </class>
+  </package>
+  <package name="App\Http\Requests" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.1925">
+    <class name="ProfileUpdateRequest" fqname="App\Http\Requests\ProfileUpdateRequest" start="9" end="23" loc="15" cloc="5" eloc="6" lloc="1" ncloc="10" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.21375" ca="1" cbo="2" ce="2" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Http\Requests\ProfileUpdateRequest.php"/>
+      <method name="rules" start="16" end="22" ccn="1" ccn2="1" loc="7" cloc="0" eloc="6" lloc="1" ncloc="7" npath="1" hnt="26" hnd="15" hv="101.57915548582" hd="9.7142857142857" hl="0.10294117647059" he="986.76893900512" ht="54.820496611396" hb="0.033038657539254" hi="10.456677770599" mi="68.839261503171"/>
+    </class>
+  </package>
+  <package name="App\Listeners" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.15">
+    <class name="OrderCompletedListener" fqname="App\Listeners\OrderCompletedListener" start="14" end="25" loc="12" cloc="0" eloc="6" lloc="3" ncloc="12" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.15" ca="0" cbo="3" ce="3" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Listeners\OrderCompletedListener.php"/>
+      <method name="handle" start="18" end="24" ccn="2" ccn2="2" loc="7" cloc="0" eloc="6" lloc="3" ncloc="7" npath="2" hnt="19" hnd="15" hv="74.230921316562" hd="4.8125" hl="0.20779220779221" he="357.23630883595" ht="19.846461601997" hb="0.016782209598861" hi="15.424607026818" mi="69.65857103887"/>
+    </class>
+  </package>
+  <package name="App\Mail" noc="2" noi="0" nom="8" nof="0" cr="0.15" rcr="0.2775">
+    <class name="OrderCompletedMail" fqname="App\Mail\OrderCompletedMail" start="13" end="54" loc="42" cloc="11" eloc="17" lloc="4" ncloc="31" dit="2" noam="4" nocc="0" noom="0" nom="4" cr="0.15" rcr="0.21375" ca="1" cbo="3" ce="3" impl="0" cis="5" csz="5" npm="4" vars="1" varsi="1" varsnp="1" wmc="4" wmci="4" wmcnp="4">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Mail\OrderCompletedMail.php"/>
+      <method name="__construct" start="19" end="22" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="envelope" start="27" end="32" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="9" hnd="9" hv="28.529325012981" hd="6" hl="0.16666666666667" he="171.17595007788" ht="9.5097750043269" hb="0.010276389970974" hi="4.7548875021635" mi="74.428220343202"/>
+      <method name="content" start="37" end="43" ccn="1" ccn2="1" loc="7" cloc="0" eloc="6" lloc="1" ncloc="7" npath="1" hnt="15" hnd="14" hv="57.110323830864" hd="6" hl="0.16666666666667" he="342.66194298518" ht="19.036774610288" hb="0.016322599600951" hi="9.518387305144" mi="70.590394797139"/>
+      <method name="attachments" start="50" end="53" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="12.5" hl="0.08" he="145.12050593046" ht="8.06225032947" hb="0.0092051584355002" hi="0.92877123795494" mi="82.001716149821"/>
+    </class>
+    <class name="OrderReceived" fqname="App\Mail\OrderReceived" start="13" end="53" loc="41" cloc="0" eloc="26" lloc="7" ncloc="41" dit="2" noam="4" nocc="0" noom="0" nom="4" cr="0.15" rcr="0.21375" ca="1" cbo="3" ce="3" impl="0" cis="6" csz="6" npm="4" vars="2" varsi="2" varsnp="2" wmc="4" wmci="4" wmcnp="4">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Mail\OrderReceived.php"/>
+      <method name="__construct" start="20" end="24" ccn="1" ccn2="1" loc="5" cloc="0" eloc="4" lloc="2" ncloc="5" npath="1" hnt="10" hnd="8" hv="30" hd="3" hl="0.33333333333333" he="90" ht="5" hb="0.0066943295008217" hi="10" mi="76.38935962878"/>
+      <method name="envelope" start="26" end="31" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="9" hnd="9" hv="28.529325012981" hd="6" hl="0.16666666666667" he="171.17595007788" ht="9.5097750043269" hb="0.010276389970974" hi="4.7548875021635" mi="74.428220343202"/>
+      <method name="content" start="33" end="41" ccn="1" ccn2="1" loc="9" cloc="0" eloc="8" lloc="1" ncloc="9" npath="1" hnt="16" hnd="14" hv="60.917678752922" hd="6.6666666666667" hl="0.15" he="406.11785835281" ht="22.562103241823" hb="0.018280166067773" hi="9.1376518129383" mi="67.668728198522"/>
+      <method name="attachments" start="43" end="52" ccn="1" ccn2="1" loc="10" cloc="0" eloc="9" lloc="3" ncloc="10" npath="1" hnt="47" hnd="23" hv="212.60741193468" hd="8.3571428571429" hl="0.11965811965812" he="1776.7905140255" ht="98.71058411253" hb="0.048899328641695" hi="25.440203137483" mi="62.751950724271"/>
+    </class>
+  </package>
+  <package name="App\Models" noc="6" noi="0" nom="10" nof="0" cr="0.15" rcr="0.5325">
+    <class name="BillingDetail" fqname="App\Models\BillingDetail" start="9" end="26" loc="18" cloc="0" eloc="3" lloc="1" ncloc="18" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.1755" ca="1" cbo="2" ce="2" impl="0" cis="1" csz="2" npm="1" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Models\BillingDetail.php"/>
+      <method name="user" start="22" end="25" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+    <class name="Category" fqname="App\Models\Category" start="8" end="21" loc="14" cloc="0" eloc="3" lloc="1" ncloc="14" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.1755" ca="2" cbo="1" ce="1" impl="0" cis="1" csz="2" npm="1" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Models\Category.php"/>
+      <method name="product" start="17" end="20" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+    <class name="Order" fqname="App\Models\Order" start="10" end="43" loc="34" cloc="0" eloc="19" lloc="11" ncloc="34" dit="2" noam="3" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.1755" ca="7" cbo="3" ce="3" impl="0" cis="2" csz="4" npm="2" vars="1" varsi="1" varsnp="0" wmc="7" wmci="7" wmcnp="2">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Models\Order.php"/>
+      <method name="boot" start="19" end="32" ccn="3" ccn2="5" loc="14" cloc="0" eloc="13" lloc="9" ncloc="14" npath="9" hnt="45" hnd="18" hv="187.6466250649" hd="15" hl="0.066666666666667" he="2814.6993759736" ht="156.37218755409" hb="0.066450781036397" hi="12.509775004327" mi="59.110003275043"/>
+      <method name="user" start="34" end="37" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="orderItems" start="39" end="42" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+    <class name="OrderItem" fqname="App\Models\OrderItem" start="8" end="23" loc="16" cloc="0" eloc="6" lloc="2" ncloc="16" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.1755" ca="2" cbo="2" ce="2" impl="0" cis="2" csz="3" npm="2" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Models\OrderItem.php"/>
+      <method name="order" start="14" end="17" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="product" start="19" end="22" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+    <class name="Product" fqname="App\Models\Product" start="8" end="29" loc="22" cloc="0" eloc="3" lloc="1" ncloc="22" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.1755" ca="5" cbo="1" ce="1" impl="0" cis="1" csz="2" npm="1" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Models\Product.php"/>
+      <method name="categories" start="25" end="28" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+    <class name="User" fqname="App\Models\User" start="14" end="57" loc="44" cloc="15" eloc="6" lloc="2" ncloc="29" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.405" ca="4" cbo="2" ce="2" impl="1" cis="2" csz="5" npm="2" vars="3" varsi="3" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Models\User.php"/>
+      <method name="canAccessFilament" start="49" end="51" ccn="1" ccn2="1" loc="3" cloc="0" eloc="3" lloc="1" ncloc="3" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="billingDetails" start="53" end="56" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+  </package>
+  <package name="App\Providers" noc="5" noi="0" nom="7" nof="0" cr="0.15" rcr="0.405">
+    <class name="AppServiceProvider" fqname="App\Providers\AppServiceProvider" start="8" end="28" loc="21" cloc="11" eloc="4" lloc="0" ncloc="10" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.21375" ca="0" cbo="0" ce="0" impl="0" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Providers\AppServiceProvider.php"/>
+      <method name="register" start="13" end="16" ccn="1" ccn2="1" loc="4" cloc="1" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="boot" start="21" end="27" ccn="1" ccn2="1" loc="7" cloc="4" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+    </class>
+    <class name="AuthServiceProvider" fqname="App\Providers\AuthServiceProvider" start="8" end="26" loc="19" cloc="10" eloc="2" lloc="0" ncloc="9" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="1" csz="2" npm="1" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Providers\AuthServiceProvider.php"/>
+      <method name="boot" start="22" end="25" ccn="1" ccn2="1" loc="4" cloc="1" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+    </class>
+    <class name="BroadcastServiceProvider" fqname="App\Providers\BroadcastServiceProvider" start="8" end="19" loc="12" cloc="3" eloc="4" lloc="2" ncloc="9" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.21375" ca="0" cbo="1" ce="1" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Providers\BroadcastServiceProvider.php"/>
+      <method name="boot" start="13" end="18" ccn="1" ccn2="1" loc="6" cloc="0" eloc="4" lloc="2" ncloc="6" npath="1" hnt="10" hnd="8" hv="30" hd="5.8333333333333" hl="0.17142857142857" he="175" ht="9.7222222222222" hb="0.010428874576127" hi="5.1428571428571" mi="76.38935962878"/>
+    </class>
+    <class name="EventServiceProvider" fqname="App\Providers\EventServiceProvider" start="12" end="44" loc="33" cloc="12" eloc="5" lloc="1" ncloc="21" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="2" csz="3" npm="2" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Providers\EventServiceProvider.php"/>
+      <method name="boot" start="32" end="35" ccn="1" ccn2="1" loc="4" cloc="1" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="shouldDiscoverEvents" start="40" end="43" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+    </class>
+    <class name="RouteServiceProvider" fqname="App\Providers\RouteServiceProvider" start="11" end="40" loc="30" cloc="0" eloc="12" lloc="6" ncloc="30" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.2775" ca="7" cbo="4" ce="4" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\Providers\RouteServiceProvider.php"/>
+      <method name="boot" start="25" end="39" ccn="2" ccn2="2" loc="15" cloc="0" eloc="12" lloc="6" ncloc="15" npath="2" hnt="41" hnd="21" hv="180.08501433393" hd="6.25" hl="0.16" he="1125.5313395871" ht="62.529518865948" hb="0.036067591316664" hi="28.813602293429" mi="60.39688962512"/>
+    </class>
+  </package>
+  <package name="App\View\Components" noc="2" noi="0" nom="2" nof="0" cr="0.15" rcr="0.2775">
+    <class name="AppLayout" fqname="App\View\Components\AppLayout" start="8" end="17" loc="10" cloc="3" eloc="3" lloc="1" ncloc="7" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.21375" ca="0" cbo="1" ce="1" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\View\Components\AppLayout.php"/>
+      <method name="render" start="13" end="16" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+    <class name="GuestLayout" fqname="App\View\Components\GuestLayout" start="8" end="17" loc="10" cloc="3" eloc="3" lloc="1" ncloc="7" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.21375" ca="0" cbo="1" ce="1" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\View\Components\GuestLayout.php"/>
+      <method name="render" start="13" end="16" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+  </package>
+  <package name="App\Services" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.15">
+    <class name="InvoiceService" fqname="App\Services\InvoiceService" start="9" end="64" loc="56" cloc="5" eloc="44" lloc="7" ncloc="51" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.15" ca="3" cbo="3" ce="3" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\karly\OneDrive\Documentos\VII SEMESTRE\Calidad\Proyecto2\ModaMix\app\services\InvoiceService.php"/>
+      <method name="createInvoice" start="10" end="63" ccn="2" ccn2="2" loc="54" cloc="5" eloc="44" lloc="7" ncloc="49" npath="2" hnt="142" hnd="68" hv="864.41972345755" hd="8.4642857142857" hl="0.11814345991561" he="7316.6955164085" ht="406.48308424492" hb="0.12562866173924" hi="102.12553694857" mi="43.317791832002"/>
+    </class>
+  </package>
+</metrics>

@@ -14,9 +14,11 @@ class BillingDetail extends Model
         'billing_address',
         'city',
         'state',
+        'parroquia_barrio',
         'zipcode',
         'phone',
         'order_notes',
+        'payment_method',
     ];
 
     public function user(): BelongsTo

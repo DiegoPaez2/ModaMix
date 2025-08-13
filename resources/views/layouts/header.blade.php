@@ -25,6 +25,7 @@
                                                     <li><a href="/admin">Admin Dashboard</a></li>
                                                 @endif
                                                 <li><a href="{{ route('dashboard') }}">Orders Dashboard</a></li>
+                                                <li><a href="{{ route('facturas.historial') }}">Historial de Facturas</a></li>
                                                 <li><a href="{{ route('profile.edit') }}">Account Settings</a></li>
                                                 <li>
                                                     <form method="POST" action="{{ route('logout') }}">

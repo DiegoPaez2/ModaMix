@@ -7,17 +7,20 @@
                 </div>
             @endif
             <div class="row">
+                    <div class="mb-4">
+                        <a href="{{ route('dashboard') }}" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full shadow transition">&larr; Regresar</a>
+                    </div>
                 <div class="col-12">
                     <div class="table-responsive">
                         <table class="table shopping-summery text-center clean">
                             <thead>
                                 <tr class="main-heading">
-                                    <th scope="col">Image</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Cantidad</th>
                                     <th scope="col">Subtotal</th>
-                                    <th scope="col">Remove</th>
+                                    <th scope="col">Eliminar</th>
                                 </tr>
                             </thead>
                             @if (Cart::count() > 0)
@@ -87,14 +90,14 @@
                                                 <a onclick="event.preventDefault(); this.closest('form').submit()"
                                                     class="text-muted">
                                                     <i class="fi-rs-cross-small"></i>
-                                                    Clear Cart</a>
+                                                    Vaciar carrito</a>
                                             </form>
                                         </td>
                                     </tr>
 
                                 </tbody>
                             @else
-                                <h1 class="text-xl font-bold pb-20">No item in cart</h1>
+                                <h1 class="text-xl font-bold pb-20">No hay productos en el carrito</h1>
                             @endif
                         </table>
                     </div>
@@ -108,24 +111,23 @@
                                 <div class=" rounded-xl cart-totals">
                                     <div class="mb-3">
                                         <h1 class="font-bold text-lg tracking-widest text-orange-500 mb-2 uppercase">
-                                            Cart total</h1>
+                                            Total del carrito</h1>
                                     </div>
                                     <div class="table-responsive">
                                         <table class="table">
                                             <tbody>
                                                 <tr>
-                                                    <td class="cart_total_label">Cart Subtotal</td>
+                                                    <td class="cart_total_label">Subtotal</td>
                                                     <td class="cart_total_amount"><span
                                                             class="font-lg fw-900 text-brand">${{ Cart::subtotal() }}</span>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="cart_total_label">Shipping</td>
-                                                    <td class="cart_total_amount"> <i class="ti-gift mr-5"></i> Free
-                                                        Shipping</td>
+                                                    <td class="cart_total_label">Envío</td>
+                                                    <td class="cart_total_amount"> <i class="ti-gift mr-5"></i> Envío gratis</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="cart_total_label">Tax</td>
+                                                    <td class="cart_total_label">Impuesto</td>
                                                     <td class="cart_total_amount">
                                                         <i class="ti-gift mr-5"></i>
                                                         <strong class="font-xl text-red-500">
@@ -140,7 +142,6 @@
                                                                 ${{ Cart::total() }}
                                                             </span></strong>
                                                     </td>
-
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -148,7 +149,7 @@
                                     <div class="cart-action text-end">
                                         <a href="{{ route('checkout') }}" class="btn"> <i
                                                 class="fi-rs-box-alt mr-10"></i>
-                                            Proceed to Checkout</a>
+                                            Ir a pagar</a>
                                     </div>
                                 </div>
                             </div>

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0036836d242840695ebb304a5950258f",
+    "content-hash": "ee7f1264ea44b94651cc19c6e4715f1f",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -1851,22 +1851,22 @@
         },
         {
             "name": "hardevine/shoppingcart",
-            "version": "3.2",
+            "version": "3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hardevine/LaravelShoppingcart.git",
-                "reference": "df525606697abf68882a2221ad1f2286353b49eb"
+                "reference": "023025ca6f2106b82842da146b2895aeb18a9eeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hardevine/LaravelShoppingcart/zipball/df525606697abf68882a2221ad1f2286353b49eb",
-                "reference": "df525606697abf68882a2221ad1f2286353b49eb",
+                "url": "https://api.github.com/repos/hardevine/LaravelShoppingcart/zipball/023025ca6f2106b82842da146b2895aeb18a9eeb",
+                "reference": "023025ca6f2106b82842da146b2895aeb18a9eeb",
                 "shasum": ""
             },
             "require": {
-                "illuminate/events": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6|^7|^8|^9|^10",
-                "illuminate/session": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6|^7|^8|^9|^10",
-                "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6|^7|^8|^9|^10"
+                "illuminate/events": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6|^7|^8|^9|^10|^11|^12",
+                "illuminate/session": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6|^7|^8|^9|^10|^11|^12",
+                "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6|^7|^8|^9|^10|^11|^12"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9.0",
@@ -1879,12 +1879,12 @@
             "type": "library",
             "extra": {
                 "laravel": {
-                    "providers": [
-                        "Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider"
-                    ],
                     "aliases": {
                         "Cart": "Gloudemans\\Shoppingcart\\Facades\\Cart"
-                    }
+                    },
+                    "providers": [
+                        "Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider"
+                    ]
                 }
             },
             "autoload": {
@@ -1909,9 +1909,9 @@
             ],
             "support": {
                 "issues": "https://github.com/hardevine/LaravelShoppingcart/issues",
-                "source": "https://github.com/hardevine/LaravelShoppingcart/tree/3.2"
+                "source": "https://github.com/hardevine/LaravelShoppingcart/tree/3.4"
             },
-            "time": "2023-03-09T06:15:48+00:00"
+            "time": "2025-03-17T14:19:20+00:00"
         },
         {
             "name": "laravel/cashier",
@@ -10035,12 +10035,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.1"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }

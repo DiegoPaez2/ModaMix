@@ -1,101 +1,123 @@
 <x-app-layout>
     <section class="mt-50 mb-50">
+        <div class="alert alert-info mb-4 text-center text-indigo-700 bg-indigo-100 rounded">
+            Por favor, llena los datos de facturación y selecciona el método de pago para completar tu pedido. Revisa el resumen a la derecha antes de finalizar.
+        </div>
         <div class="container">
+                <div class="mb-4">
+                    <a href="{{ route('dashboard') }}" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-full shadow transition">&larr; Regresar</a>
+                </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="mb-25">
-                        <h4 class="font-semibold text-lg text-gray-600">Billing Details</h4>
+                        <h4 class="font-semibold text-lg text-gray-600">Detalles de facturación</h4>
                     </div>
                     <form method="post" action="{{route('checkout.order')}}" id="checkoutForm">
                         @csrf
-                        <div class="mb-4">
-                            <x-input-label for="country" :value="__('Country *')" />
-                            @include('livewire.countries-select')
-                            <x-input-error class="mt-2" :messages="$errors->get('country')" />
+                        {{-- El número de seguimiento y el enlace de factura solo se muestran después de realizar el pedido --}}
+                        <x-input-label for="state" :value="'Provincia/Estado'" />
+                        <x-text-input id="state" name="state" type="text" class="mt-1 block w-full border-2 border-indigo-300 rounded-lg focus:border-indigo-500" value="{{$billingDetails ? $billingDetails->state : ''}}" placeholder="Ejemplo: Pichincha" />
+                        <x-input-error class="mt-2 text-red-600" :messages="$errors->get('state')" />
+                        </div>
+                        <x-input-label for="country" :value="'País'" />
+                        <x-text-input id="country" name="country" type="text" class="mt-1 block w-full" value="Ecuador" readonly />
+                        <x-input-error class="mt-2 text-red-600" :messages="$errors->get('country')" />
                         </div>
                         <div class="mb-4">
-                            <x-input-label for="billing_address" :value="__('Address *')" />
+                            <x-input-label for="billing_address" :value="'Dirección *'" />
                             <x-text-input id="billing_address" name="billing_address" type="text"
                                 class="mt-1 block w-full" value="{{$billingDetails ? $billingDetails->billing_address : ''}}" required autofocus autocomplete="billing_address" />
-                            <x-input-error class="mt-2" :messages="$errors->get('billing_address')" />
+                            <x-input-error class="mt-2 text-red-600" :messages="$errors->get('billing_address')" />
                         </div>
                         <div class="mb-4">
-                            <x-input-label for="city" :value="__('City *')" />
-                            <x-text-input id="city" name="city" type="text" class="mt-1 block w-full"
+                            <x-input-label for="city" :value="'Ciudad *'" />
+                            <x-text-input id="city" name="city" type="text" class="mt-1 block w-full border-2 border-indigo-300 rounded-lg focus:border-indigo-500"
                                 autofocus autocomplete="city" value="{{$billingDetails ? $billingDetails->city : ''}}"/>
-                            <x-input-error class="mt-2" :messages="$errors->get('city')" />
+                            <x-input-error class="mt-2 text-red-600" :messages="$errors->get('city')" />
                         </div>
                         <div class="mb-4">
-                            <x-input-label for="state" :value="__('State / County *')" />
-                            <x-text-input id="state" name="state" type="text" class="mt-1 block w-full"
-                                autofocus autocomplete="state" value="{{$billingDetails ? $billingDetails->state : ''}}"/>
-                            <x-input-error class="mt-2" :messages="$errors->get('state')" />
+                            <x-input-label for="parroquia_barrio" :value="'Parroquia / Barrio *'" />
+                            <x-text-input id="parroquia_barrio" name="parroquia_barrio" type="text" class="mt-1 block w-full border-2 border-indigo-300 rounded-lg focus:border-indigo-500"
+                                autofocus autocomplete="parroquia_barrio" value="{{$billingDetails ? $billingDetails->parroquia_barrio : ''}}"/>
+                            <x-input-error class="mt-2 text-red-600" :messages="$errors->get('parroquia_barrio')" />
                         </div>
                         <div class="mb-4">
-                            <x-input-label for="zipcode" :value="__('Postcode / ZIP *')" />
-                            <x-text-input id="zipcode" name="zipcode" type="text" class="mt-1 block w-full"
+                            <x-input-label for="zipcode" :value="'Código postal *'" />
+                            <x-text-input id="zipcode" name="zipcode" type="text" class="mt-1 block w-full border-2 border-indigo-300 rounded-lg focus:border-indigo-500"
                                 autofocus autocomplete="zipcode" value="{{$billingDetails ? $billingDetails->zipcode : ''}}"/>
-                            <x-input-error class="mt-2" :messages="$errors->get('zipcode')" />
+                            <x-input-error class="mt-2 text-red-600" :messages="$errors->get('zipcode')" />
                         </div>
                         <div class="mb-4">
-                            <x-input-label for="phone" :value="__('Phone number *')" />
-                            <x-text-input id="phone" name="phone" type="text" class="mt-1 block w-full"
-                                autofocus autocomplete="phone" value="{{$billingDetails ? $billingDetails->phone : ''}}"/>
-                            <x-input-error class="mt-2" :messages="$errors->get('phone')" />
+                            <x-input-label for="phone" :value="'Teléfono *'" />
+                            <div class="flex">
+                                <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-indigo-300 bg-gray-100 text-gray-700 text-sm">+593</span>
+                                <input id="phone" name="phone" type="text" maxlength="9" pattern="[0-9]{9}" class="mt-1 block w-full border-2 border-indigo-300 rounded-r-lg focus:border-indigo-500" autofocus autocomplete="phone" value="{{$billingDetails ? ltrim($billingDetails->phone, '+593') : ''}}" placeholder="Ingrese los 9 dígitos" required />
+                            </div>
+                            <x-input-error class="mt-2 text-red-600" :messages="$errors->get('phone')" />
                         </div>
                         <div class="form-group mb-30">
-                            <x-input-label for="order_notes" :value="__('Additional information')" />
-                            <x-text-input id="order_notes" name="order_notes" type="text" class="mt-1 block w-full"
-                                autofocus autocomplete="order_notes" placeholder="Any notes?" value="{{$billingDetails ? $billingDetails->order_notes : ''}}"/>
+                            <x-input-label for="order_notes" :value="'Información adicional'" />
+                            <x-text-input id="order_notes" name="order_notes" type="text" class="mt-1 block w-full border-2 border-indigo-300 rounded-lg focus:border-indigo-500"
+                                autofocus autocomplete="order_notes" placeholder="¿Alguna nota?" value="{{$billingDetails ? $billingDetails->order_notes : ''}}"/>
                         </div>
+                        <div class="mb-4">
+                            <x-input-label for="payment_method" :value="'Forma de pago *'" />
+                            <select id="payment_method" name="payment_method" class="mt-1 block w-full" required>
+                                <option value="tarjeta">Tarjeta de crédito</option>
+                                <option value="transferencia">Transferencia bancaria</option>
+                                <option value="efectivo">Pago en efectivo</option>
+                            </select>
+                            <x-input-error class="mt-2 text-red-600" :messages="$errors->get('payment_method')" />
+                        </div>
+                        <button type="submit" class="btn btn-block mt-30">Realizar pedido</button>
                     </form>
-                </div>
+                <!-- Fin columna izquierda -->
                 <div class="col-md-6">
                     <div class="order_review border-0">
                         <div class="mb-5">
-                            <h3 class="my-2 text-lg font-semibold text-gray-600">Your Orders</h3>
+                            <h3 class="my-2 text-lg font-semibold text-gray-600">Tus pedidos</h3>
                         </div>
                         <div class="table-responsive order_table text-center">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th colspan="2">Product</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach (Cart::content() as $i)
-                                        <tr>
-                                            <td class="image product-thumbnail"><img src="{{ asset('storage/'.$i->model->image) }}"
-                                                    alt="#">
-                                            </td>
-                                            <td>
-                                                <h5><a
-                                                        href="{{ route('product.details', $i->model->id) }}">{{ $i->model->name }}</a>
-                                                </h5>
-                                                <span class="product-qty">x {{ $i->qty }}</span>
-                                            </td>
-                                            <td>${{ $i->subtotal }}</td>
-                                        </tr>
-                                    @endforeach
-                                    <tr>
-                                        <th>SubTotal</th>
-                                        <td class="product-subtotal" colspan="2">${{ Cart::subtotal() }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Tax</th>
-                                        <td class="product-subtotal" colspan="2">${{ Cart::tax() }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Shipping</th>
-                                        <td colspan="2"><em>Free Shipping</em></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Total</th>
-                                        <td colspan="2" class="product-subtotal"><span
-                                                class="font-xl text-brand fw-900">${{ Cart::total() }}</span></td>
-                                    </tr>
-                                </tbody>
+                            <div class="col-md-6">
+                                <div class="order_review bg-white p-4 rounded shadow-lg">
+                                    <h4 class="mb-3 font-bold text-xl text-indigo-700 text-center">Resumen de tu pedido</h4>
+                                    <ul class="list-group mb-3">
+                                        @foreach (Cart::content() as $item)
+                                            <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                                <div>
+                                                    <h6 class="my-0">{{ $item->name }}</h6>
+                                                    <small class="text-muted">Cantidad: {{ $item->qty }}</small>
+                                                </div>
+                                                <span class="text-muted">${{ number_format($item->price * $item->qty, 2) }}</span>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                    <ul class="list-group mb-3">
+                                        <li class="list-group-item d-flex justify-content-between">
+                                            <span>Subtotal</span>
+                                            <strong>${{ number_format(Cart::subtotal(), 2) }}</strong>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between">
+                                            <span>IVA (15%)</span>
+                                            <strong>${{ number_format(Cart::subtotal() * 0.15, 2) }}</strong>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between">
+                                            <span>Total</span>
+                                            <strong>${{ number_format(Cart::subtotal() * 1.15, 2) }}</strong>
+                                        </li>
+                                    </ul>
+                                    @if(session('tracking_number'))
+                                        <div class="alert alert-info mt-3 text-center">
+                                            <strong>Número de seguimiento:</strong> {{ session('tracking_number') }}
+                                        </div>
+                                    @endif
+                                    @if(session('success'))
+                                        <div class="alert alert-success mt-3 text-center">
+                                            Su pago se realizó con éxito.<br>
+                                            {{ session('success') }}
+                                        </div>
+                                    @endif
+                                </div>
                             </table>
                         </div>
                         {{-- <div class="bt-1 border-color-1 mt-30 mb-30"></div> --}}
@@ -136,7 +158,16 @@
                                 </li>
                             </ul>
                         </form> --}}
-                        <button type="submit" class="btn btn-block mt-30" onclick="document.getElementById('checkoutForm').submit();">Place Order</button>
+                        <div class="mb-4">
+                            <x-input-label for="payment_method" :value="'Forma de pago *'" />
+                            <select id="payment_method" name="payment_method" class="mt-1 block w-full" required>
+                                <option value="tarjeta">Tarjeta de crédito</option>
+                                <option value="transferencia">Transferencia bancaria</option>
+                                <option value="efectivo">Pago en efectivo</option>
+                            </select>
+                            <x-input-error class="mt-2" :messages="$errors->get('payment_method')" />
+                        </div>
+                        <button type="submit" class="btn btn-block mt-30" onclick="document.getElementById('checkoutForm').submit();">Realizar pedido</button>
                     </div>
                 </div>
             </div>
